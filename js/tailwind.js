@@ -1,5 +1,5 @@
 module.exports = {
-    // ...
+    content: ['./src/**/*.{html,js}'],
     theme: {
         colors: {
             'blue': '#1fb6ff',
@@ -25,5 +25,5 @@ module.exports = {
                 '4xl': '2rem',
             }
         }
-    }
+    },
 }
