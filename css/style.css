@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Nova Proxima';
+    src: url('path/to/font/files/NovaProxima-Regular.woff2') format('woff2'),
+        url('path/to/font/files/NovaProxima-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* You can also define other font weights and styles as needed */
+@font-face {
+    font-family: 'Nova Proxima';
+    src: url('path/to/font/files/NovaProxima-Bold.woff2') format('woff2'),
+        url('path/to/font/files/NovaProxima-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Nova Proxima', sans-serif;
+}
