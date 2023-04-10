@@ -153,13 +153,13 @@
     </nav>
 
     <!-- mobile breadcrumb component -->
-    <nav aria-label="Breadcrumb" class="md:hidden fixed left-0 top-20 transform translate-y-1/2 z-40 w-fit">
+    <nav aria-label="Breadcrumb" class="md:hidden fixed top-0 z-40 w-fit">
         <div class="flex justify-center">
-            <ol id="drawer-left" tabindex="1" role="list"
-                class="flex flex-col overflow-hidden rounded-lg text-gray-600 shadow-md shadow-inner shadow-2xl z-20 transition-transform left-0 top-0 -translate-x-full">
+            <ol id="mobile-drawer" tabindex="1" role="list"
+                class="flex-col overflow-hidden rounded-lg text-gray-600 shadow-md shadow-inner shadow-2xl z-20 transition-transform left-0 top-0 -translate-y-full">
 
-                <li class="flex bg-white">
-                    <a href="#Hero" class="flex h-10 items-center px-2 transition hover:text-gray-900">
+                <li class="flex items-center bg-white pb-2">
+                    <a href="#Hero" class="flex h-10 items-center pr-4 pl-2 transition hover:text-gray-900">
                         <div class="bg-blue-700 rounded-2xl bg-opacity-25 bg-contain p-2">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -167,11 +167,14 @@
                                     d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                             </svg>
                         </div>
+
+                        <span class="ml-1.5 text-xs font-medium"> Home </span>
                     </a>
                 </li>
 
-                <li class="flex bg-white">
-                    <a href="#Skills" class="flex h-10 items-center px-2 transition hover:text-gray-900">
+                <li class="flex items-center bg-white pb-2">
+
+                    <a href="#Skills" class="flex h-10 items-center pr-4 pl-2 transition hover:text-gray-900">
                         <div class="bg-blue-700 rounded-2xl bg-opacity-25 bg-contain p-2">
                             <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
                                 class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -183,11 +186,14 @@
                                 </path>
                             </svg>
                         </div>
+
+                        <span class="ml-1.5 text-xs font-medium"> Skills </span>
                     </a>
                 </li>
 
-                <li class="flex bg-white">
-                    <a href="#Projects" class="flex h-10 items-center px-2 transition hover:text-gray-900">
+                <li class="flex items-center bg-white pb-2">
+
+                    <a href="#Projects" class="flex h-10 items-center pr-4 pl-2 transition hover:text-gray-900">
                         <div class="bg-blue-700 rounded-2xl bg-opacity-25 bg-contain p-2">
                             <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
                                 class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -196,11 +202,14 @@
                                 </path>
                             </svg>
                         </div>
+
+                        <span class="ml-1.5 text-xs font-medium"> Projects </span>
                     </a>
                 </li>
 
-                <li class="flex bg-white">
-                    <a href="#About" class="flex h-10 items-center px-2 transition hover:text-gray-900">
+                <li class="flex items-center bg-white pb-2">
+
+                    <a href="#About" class="flex h-10 items-center pr-4 pl-2 transition hover:text-gray-900">
                         <div class="bg-blue-700 rounded-2xl bg-opacity-25 bg-contain p-2">
                             <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
                                 class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -209,11 +218,14 @@
                                 </path>
                             </svg>
                         </div>
+
+                        <span class="ml-1.5 text-xs font-medium"> About </span>
                     </a>
                 </li>
 
-                <li class="flex bg-white">
-                    <a href="#Contact" class="flex h-10 items-center px-2 transition hover:text-gray-900">
+                <li class="flex items-center bg-white">
+
+                    <a href="#Contact" class="flex h-10 items-center pr-4 pl-2 transition hover:text-gray-900">
                         <div class="bg-blue-700 rounded-2xl bg-opacity-25 bg-contain p-2">
                             <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
                                 class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -222,33 +234,32 @@
                                 </path>
                             </svg>
                         </div>
+
+                        <span class="ml-1.5 text-xs font-medium"> Contact </span>
                     </a>
                 </li>
 
-                <li class="relative flex items-center bg-white">
-                    <button class="text-white h-10 px-2 mx-auto" type="button" data-drawer-target="drawer-left"
-                        data-drawer-hide="drawer-left" data-drawer-placement="left" aria-controls="drawer-left"
-                        data-drawer-body-scrolling="true" data-drawer-backdrop="false">
-                        <svg class="w-4 h-4 text-gray-500 transition duration-75 group-hover:text-gray-900" fill="none"
+                <li class="flex justify-center bg-white border-t-2">
+                    <button class="mx-auto text-white rounded-lg p-2" type="button" data-drawer-target="mobile-drawer"
+                        data-drawer-hide="mobile-drawer" data-drawer-placement="top" data-drawer-body-scrolling="true"
+                        data-drawer-backdrop="false" aria-controls="mobile-drawer">
+                        <svg class="w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900" fill="none"
                             stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5"></path>
+                                d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5"></path>
                         </svg>
                     </button>
                 </li>
             </ol>
-
-            <button
-                class="absolute left-0 top-24 rounded-r-2xl text-black bg-white shadow-inner shadow-md px-4 py-2.5 z-10"
-                type="button" data-drawer-target="drawer-left" data-drawer-show="drawer-left"
-                data-drawer-placement="left" aria-controls="drawer-left" data-drawer-body-scrolling="true"
-                data-drawer-backdrop="false">
-                <svg class="w-4 h-4 text-gray-500 transition duration-75 group-hover:text-gray-900" fill="none"
-                    stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true">
+            <button class="absolute left-6 rounded-b-2xl text-black bg-white shadow-inner shadow-md px-4 py-2.5 z-10"
+                type="button" data-drawer-target="mobile-drawer" data-drawer-show="mobile-drawer"
+                data-drawer-placement="top" data-drawer-body-scrolling="true" data-drawer-backdrop="false"
+                aria-controls="mobile-drawer">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"></path>
+                        d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"></path>
                 </svg>
             </button>
         </div>
