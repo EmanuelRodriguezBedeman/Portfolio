@@ -132,7 +132,7 @@
                     </button>
                 </li>
             </ol>
-            <button class="absolute rounded-2xl text-black bg-white shadow-inner shadow-md px-4 py-2.5 z-10"
+            <button class="absolute rounded-b-2xl text-black bg-white shadow-inner shadow-md px-4 py-2.5 z-10"
                 type="button" data-drawer-target="drawer-top" data-drawer-show="drawer-top" data-drawer-placement="top"
                 aria-controls="drawer-top" data-drawer-body-scrolling="true" data-drawer-backdrop="false">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
@@ -145,10 +145,11 @@
     </nav>
 
     <!-- mobile breadcrumb component -->
-    <nav aria-label="Breadcrumb" class="md:hidden fixed left-0 top-0 z-40 w-fit">
+    <nav aria-label="Breadcrumb" class="md:hidden fixed left-0 top-20 transform translate-y-1/2 z-40 w-fit">
         <div class="flex justify-center">
             <ol id="drawer-left" tabindex="1" role="list"
-                class="flex flex-col overflow-hidden rounded-lg text-gray-600 shadow-md shadow-inner shadow-2xl z-20">
+                class="flex flex-col overflow-hidden rounded-lg text-gray-600 shadow-md shadow-inner shadow-2xl z-20 transition-transform left-0 top-0 -translate-x-full">
+
                 <li class="flex bg-white">
                     <a href="#Hero" class="flex h-10 items-center px-2 transition hover:text-gray-900">
                         <div class="bg-blue-700 rounded-2xl bg-opacity-25 bg-contain p-2">
@@ -158,8 +159,6 @@
                                     d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                             </svg>
                         </div>
-
-                        <span class="ml-1.5 text-xs font-medium"> Home </span>
                     </a>
                 </li>
 
@@ -176,8 +175,6 @@
                                 </path>
                             </svg>
                         </div>
-
-                        <span class="ml-1.5 text-xs font-medium"> Skills </span>
                     </a>
                 </li>
 
@@ -191,8 +188,6 @@
                                 </path>
                             </svg>
                         </div>
-
-                        <span class="ml-1.5 text-xs font-medium"> Projects </span>
                     </a>
                 </li>
 
@@ -206,8 +201,6 @@
                                 </path>
                             </svg>
                         </div>
-
-                        <span class="ml-1.5 text-xs font-medium"> About </span>
                     </a>
                 </li>
 
@@ -221,13 +214,11 @@
                                 </path>
                             </svg>
                         </div>
-
-                        <span class="ml-1.5 text-xs font-medium"> Contact </span>
                     </a>
                 </li>
 
                 <li class="relative flex items-center bg-white">
-                    <button class="text-white rounded-lg px-5 py-2.5" type="button" data-drawer-target="drawer-left"
+                    <button class="text-white h-10 px-2 mx-auto" type="button" data-drawer-target="drawer-left"
                         data-drawer-hide="drawer-left" data-drawer-placement="left" aria-controls="drawer-left"
                         data-drawer-body-scrolling="true" data-drawer-backdrop="false">
                         <svg class="w-4 h-4 text-gray-500 transition duration-75 group-hover:text-gray-900" fill="none"
@@ -241,7 +232,7 @@
             </ol>
 
             <button
-                class="absolute left-0 top-24 rounded-2xl text-black bg-white shadow-inner shadow-md px-4 py-2.5 z-10"
+                class="absolute left-0 top-24 rounded-r-2xl text-black bg-white shadow-inner shadow-md px-4 py-2.5 z-10"
                 type="button" data-drawer-target="drawer-left" data-drawer-show="drawer-left"
                 data-drawer-placement="left" aria-controls="drawer-left" data-drawer-body-scrolling="true"
                 data-drawer-backdrop="false">
@@ -258,10 +249,9 @@
     <div id="topContainer"
         class="h-screen w-full bg-no-repeat bg-cover bg-center bg-fixed contrast-75 saturate-50 bg-blend-multiply bg-blue-700 overflow-hidden">
 
-        <section id="Hero" class="">
-            <div
-                class="bg-slate-900 bg-opacity-25 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                <h1 class="text-4xl xl:text-6xl 2xl:text-7xl text-white font-semibold tracking-tight leading-none">
+        <section id="Hero" class="flex h-screen text-center">
+            <div class="bg-slate-900 bg-opacity-25 m-auto">
+                <h1 class="text-6xl xl:text-6xl 2xl:text-7xl text-white font-semibold tracking-tight leading-none">
                     Emanuel <br> Rodriguez Bedeman
                 </h1>
                 <p class="md:text-lg lg:text-2xl 2xl:text-4xl text-white italic my-20">
