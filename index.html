@@ -314,31 +314,50 @@
 
         <section id="Skills" class="py-12">
             <div class="flex">
-                <header class="text-6xl mb-12 mx-auto">My Skills</header>
+                <header class="mb-12 mx-auto">
+                    <h1 class="text-6xl ">My Skills</h1>
+                </header>
             </div>
-            <div class="ml-2">
+            <div id="" class="ml-2">
                 <div class="text-3xl">
                     Programming languages:
                 </div>
                 <div class="md:grid md:grid-cols-2">
-                    <div class="md:w-4/5 md:mx-auto">
-                        <img class="w-10 h-10" src="src/imgs/ruby.svg" alt="ruby">
-                        <div class="flex justify-between mb-1">
-                            <span class="text-base font-medium text-black dark:text-black">Ruby Junior</span>
-                            <span class="text-sm font-medium text-black dark:text-black">Middle</span>
+                    <div class="flex items-center md:w-4/5 md:mx-auto">
+                        <img data-tooltip-target="tooltip-ruby" class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md"
+                            src="src/imgs/ruby.svg" alt="ruby">
+                        <div id="tooltip-ruby" role="tooltip"
+                            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                            Ruby
+                            <div class="tooltip-arrow" data-popper-arrow></div>
                         </div>
-                        <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                            <div class="bg-red-600 h-2.5 rounded-full dark:bg-red-500" style="width: 45%"></div>
+                        <div class="w-full">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-black dark:text-black">Junior</span>
+                                <span class="text-sm font-medium text-black dark:text-black">Middle</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                <div class="bg-red-600 h-2.5 rounded-full dark:bg-red-500" style="width: 45%"></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="md:w-4/5 md:mx-auto">
-                        <img class="w-10 h-10" src="src/imgs/javascript.svg" alt="ruby">
-                        <div class="flex justify-between mb-1">
-                            <span class="text-base font-medium text-black dark:text-black">Javascript Junior</span>
-                            <span class="text-sm font-medium text-black dark:text-black">Middle</span>
+                    <div class="flex items-center md:w-4/5 md:mx-auto">
+                        <img data-tooltip-target="tooltip-javascript"
+                            class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/javascript.svg"
+                            alt="javascript">
+                        <div id="tooltip-javascript" role="tooltip"
+                            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                            Javascript
+                            <div class="tooltip-arrow" data-popper-arrow></div>
                         </div>
-                        <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                            <div class="bg-yellow-400 h-2.5 rounded-full" style="width: 45%"></div>
+                        <div class="w-full">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-black dark:text-black">Junior</span>
+                                <span class="text-sm font-medium text-black dark:text-black">Middle</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                <div class="bg-yellow-400 h-2.5 rounded-full" style="width: 45%"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -349,34 +368,6 @@
                         Back-end:
                     </div>
                     <div class="ml-12">
-                        <div class="mb-1 text-base font-medium dark:text-black">Dark</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                            <div class="bg-gray-600 h-2.5 rounded-full dark:bg-gray-300" style="width: 45%"></div>
-                        </div>
-                        <div class="mb-1 text-base font-medium text-blue-700 dark:text-blue-500">Blue</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
-                        </div>
-                        <div class="mb-1 text-base font-medium text-red-700 dark:text-red-500">Red</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                            <div class="bg-red-600 h-2.5 rounded-full dark:bg-red-500" style="width: 45%"></div>
-                        </div>
-                        <div class="mb-1 text-base font-medium text-green-700 dark:text-green-500">Green</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                            <div class="bg-green-600 h-2.5 rounded-full dark:bg-green-500" style="width: 45%"></div>
-                        </div>
-                        <div class="mb-1 text-base font-medium text-yellow-700 dark:text-yellow-500">Yellow</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                            <div class="bg-yellow-400 h-2.5 rounded-full" style="width: 45%"></div>
-                        </div>
-                        <div class="mb-1 text-base font-medium text-indigo-700 dark:text-indigo-500">Indigo</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                            <div class="bg-indigo-600 h-2.5 rounded-full dark:bg-indigo-500" style="width: 45%"></div>
-                        </div>
-                        <div class="mb-1 text-base font-medium text-purple-700 dark:text-purple-500">Purple</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                            <div class="bg-purple-600 h-2.5 rounded-full dark:bg-purple-500" style="width: 45%"></div>
-                        </div>
                     </div>
                 </div>
 
