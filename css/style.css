@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Nova Proxima';
-    src: url('src/fonts/Proxima Nova') format('otf');
+    src: url('src/fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('src/fonts/ProximaNova-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -8,14 +9,14 @@
 /* You can also define other font weights and styles as needed */
 @font-face {
     font-family: 'Nova Proxima';
-    src: url('path/to/font/files/NovaProxima-Bold.woff2') format('woff2'),
-        url('path/to/font/files/NovaProxima-Bold.woff') format('woff');
+    src: url('src/fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('src/fonts/ProximaNova-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 body {
-    font-family: 'Nova Proxima', sans-serif;
+    font-family: 'Proxima Nova', sans-serif;
 }
 
 /* #Skills {

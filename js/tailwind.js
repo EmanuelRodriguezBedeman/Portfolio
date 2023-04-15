@@ -51,8 +51,7 @@ tailwind.config = {
                 'Segoe UI Emoji',
                 'Segoe UI Symbol',
                 'Noto Color Emoji'
-            ],
-            'nova': ['Nova Proxima', 'sans-serif']
+            ]
         }
     }
 }

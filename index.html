@@ -14,7 +14,7 @@
     <script src="js/tailwind.js"></script>
 </head>
 
-<body class="font-family: 'nova'">
+<body>
 
     <!-- md breadcrumb component -->
     <nav aria-label="Breadcrumb" class="hidden md:block fixed top-0 z-40 w-fit left-1/2 transform -translate-x-1/2">
@@ -318,476 +318,599 @@
                     <h1 class="text-6xl ">My Skills</h1>
                 </header>
             </div>
-            <div id="" class="ml-2">
-                <div class="text-3xl">
-                    Programming languages:
-                </div>
-                <div class="md:grid md:grid-cols-2">
-                    <div class="flex items-center md:w-4/5 md:mx-auto">
-                        <img data-tooltip-target="tooltip-ruby" class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md"
-                            src="src/imgs/ruby.svg" alt="ruby">
-                        <div id="tooltip-ruby" role="tooltip"
-                            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                            Ruby
-                            <div class="tooltip-arrow" data-popper-arrow></div>
-                        </div>
-                        <div class="w-full">
-                            <div class="flex justify-between mb-1">
-                                <span class="text-base font-medium text-black dark:text-black">Junior</span>
-                                <span class="text-sm font-medium text-black dark:text-black">Middle</span>
+            <div id="skills-table" class="ml-2">
+                <div id="programmingLanguages">
+                    <h2 class="class= text-3xl">Programming languages:</h2>
+                    <div class="md:grid md:grid-cols-2 mt-10">
+
+                        <div class="flex items-center w-4/5 md:mx-auto">
+                            <img id="rubyImg" data-tooltip-target="tooltip-ruby"
+                                class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/ruby.svg" alt="ruby">
+                            <div id="tooltip-ruby" role="tooltip"
+                                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                Ruby
+                                <div class="tooltip-arrow" data-popper-arrow></div>
                             </div>
-                            <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                <div class="bg-red-600 h-2.5 rounded-full dark:bg-red-500" style="width: 45%"></div>
+                            <div class="w-full">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-base font-medium text-black dark:text-black">Junior</span>
+                                    <span class="text-sm font-medium text-black dark:text-black">Middle</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                    <div class="bg-red-600 h-2.5 rounded-full dark:bg-red-500" style="width: 45%"></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="flex items-center md:w-4/5 md:mx-auto">
-                        <img data-tooltip-target="tooltip-javascript"
-                            class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/javascript.svg"
-                            alt="javascript">
-                        <div id="tooltip-javascript" role="tooltip"
-                            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                            Javascript
-                            <div class="tooltip-arrow" data-popper-arrow></div>
-                        </div>
-                        <div class="w-full">
-                            <div class="flex justify-between mb-1">
-                                <span class="text-base font-medium text-black dark:text-black">Junior</span>
-                                <span class="text-sm font-medium text-black dark:text-black">Middle</span>
+
+                        <div class="flex items-center w-4/5 md:mx-auto">
+                            <img id="javascriptImg" data-tooltip-target="tooltip-javascript"
+                                class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/javascript.svg"
+                                alt="javascript">
+                            <div id="tooltip-javascript" role="tooltip"
+                                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                Javascript
+                                <div class="tooltip-arrow" data-popper-arrow></div>
                             </div>
-                            <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                <div class="bg-yellow-400 h-2.5 rounded-full" style="width: 45%"></div>
+                            <div class="w-full">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-base font-medium text-black dark:text-black">Junior</span>
+                                    <span class="text-sm font-medium text-black dark:text-black">Middle</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                    <div class="bg-yellow-400 h-2.5 rounded-full" style="width: 45%"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="mb-12">
-                    <h2 class="text-3xl">Web development</h2>
-                    <div class="container text-2xl ml-6">
-                        Back-end:
+                <div id="webDevelopment" class="mb-12">
+                    <h2 class="text-3xl mt-10">Web development</h2>
+                    <div id="backEnd" class="ml-6 mt-10">
+                        <h3 class="text-2xl">Back-end:</h3>
+                        <div class="md:grid md:grid-cols-2 mt-10">
+
+                            <div class="flex items-center w-4/5 md:mx-auto">
+                                <img id="rorImg" data-tooltip-target="tooltip-ror"
+                                    class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/rubyonrails.svg"
+                                    alt="ruby on rails">
+                                <div id="tooltip-ror" role="tooltip"
+                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                    Ruby On Rails
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="flex justify-between mb-1">
+                                        <span class="text-base font-medium text-black dark:text-black">Junior</span>
+                                        <span class="text-sm font-medium text-black dark:text-black">Middle</span>
+                                    </div>
+                                    <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                        <div class="bg-red-600 h-2.5 rounded-full dark:bg-red-500" style="width: 45%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center w-4/5 md:mx-auto">
+                                <img id="nodejsImg" data-tooltip-target="tooltip-nodejs"
+                                    class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/nodejs.svg"
+                                    alt="nodejs">
+                                <div id="tooltip-nodejs" role="tooltip"
+                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                    Node.js
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="flex justify-between mb-1">
+                                        <span class="text-base font-medium text-black dark:text-black">Junior</span>
+                                        <span class="text-sm font-medium text-black dark:text-black">Middle</span>
+                                    </div>
+                                    <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                        <div class="bg-green-400 h-2.5 rounded-full" style="width: 45%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="ml-12">
+
+                    <div id="frontEnd" class="ml-6 mt-10">
+                        <h3 class="text-2xl">Front-end:</h3>
+                        <div class="md:grid md:grid-cols-2 mt-10">
+
+                            <div class="flex items-center w-4/5 md:mx-auto">
+                                <img id="bootstrapImg" data-tooltip-target="tooltip-bootstrap"
+                                    class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/bootstrap.svg"
+                                    alt="bootstrap">
+                                <div id="tooltip-bootstrap" role="tooltip"
+                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                    Bootstrap
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="flex justify-between mb-1">
+                                        <span class="text-base font-medium text-black dark:text-black">Junior</span>
+                                        <span class="text-sm font-medium text-black dark:text-black">Middle</span>
+                                    </div>
+                                    <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                        <div class="bg-purple-600 h-2.5 rounded-full dark:bg-red-500"
+                                            style="width: 45%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center w-4/5 md:mx-auto">
+                                <img id="tailwindImg" data-tooltip-target="tooltip-tailwind"
+                                    class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/tailwind.svg"
+                                    alt="tailwind css">
+                                <div id="tooltip-tailwind" role="tooltip"
+                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                    Tailwind
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="flex justify-between mb-1">
+                                        <span class="text-base font-medium text-black dark:text-black">Junior</span>
+                                        <span class="text-sm font-medium text-black dark:text-black">Middle</span>
+                                    </div>
+                                    <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                        <div class="bg-cyan-400 h-2.5 rounded-full" style="width: 45%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="mb-12">
+                <div id="databases" class="mb-12">
                     <h2 class="text-3xl">Databases</h2>
-                    <div class="ml-6">
-                        <div class="mb-1 text-base font-medium dark:text-black">Dark</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                            <div class="bg-gray-600 h-2.5 rounded-full dark:bg-gray-300" style="width: 45%"></div>
+                    <div id="relationaldb" class="ml-6 mt-10">
+                        <h3 class="text-2xl">Relational</h3>
+                        <div class="md:grid md:grid-cols-2 mt-10">
+
+                            <div class="flex items-center w-4/5 md:mx-auto">
+                                <img id="sqliteImg" data-tooltip-target="tooltip-sqlite"
+                                    class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/sqlite.svg"
+                                    alt="SQLite">
+                                <div id="tooltip-sqlite" role="tooltip"
+                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                    SQLite
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="flex justify-between mb-1">
+                                        <span class="text-base font-medium text-black dark:text-black">Junior</span>
+                                        <span class="text-sm font-medium text-black dark:text-black">Middle</span>
+                                    </div>
+                                    <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                        <div class="bg-blue-600 h-2.5 rounded-full dark:bg-red-500" style="width: 45%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center w-4/5 md:mx-auto">
+                                <img id="postgresqlImg" data-tooltip-target="tooltip-postgresql"
+                                    class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/postgresql.svg"
+                                    alt="PostgreSQL">
+                                <div id="tooltip-postgresql" role="tooltip"
+                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                    PostgreSQL
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="flex justify-between mb-1">
+                                        <span class="text-base font-medium text-black dark:text-black">Junior</span>
+                                        <span class="text-sm font-medium text-black dark:text-black">Middle</span>
+                                    </div>
+                                    <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                        <div class="bg-blue-400 h-2.5 rounded-full" style="width: 45%"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="mb-1 text-base font-medium text-blue-700 dark:text-blue-500">Blue</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
-                        </div>
-                        <div class="mb-1 text-base font-medium text-red-700 dark:text-red-500">Red</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                            <div class="bg-red-600 h-2.5 rounded-full dark:bg-red-500" style="width: 45%"></div>
-                        </div>
-                        <div class="mb-1 text-base font-medium text-green-700 dark:text-green-500">Green</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                            <div class="bg-green-600 h-2.5 rounded-full dark:bg-green-500" style="width: 45%"></div>
-                        </div>
-                        <div class="mb-1 text-base font-medium text-yellow-700 dark:text-yellow-500">Yellow</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                            <div class="bg-yellow-400 h-2.5 rounded-full" style="width: 45%"></div>
-                        </div>
-                        <div class="mb-1 text-base font-medium text-indigo-700 dark:text-indigo-500">Indigo</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                            <div class="bg-indigo-600 h-2.5 rounded-full dark:bg-indigo-500" style="width: 45%"></div>
-                        </div>
-                        <div class="mb-1 text-base font-medium text-purple-700 dark:text-purple-500">Purple</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                            <div class="bg-purple-600 h-2.5 rounded-full dark:bg-purple-500" style="width: 45%"></div>
+                    </div>
+
+                    <div id="norelationaldb" class="text-2xl ml-6 mt-10">
+                        No Relational
+                    </div>
+                    <div class="md:grid md:grid-cols-2 mt-10">
+                        <div class="flex items-center w-4/5 md:mx-auto">
+                            <img id="mongodbImg" data-tooltip-target="tooltip-mongodb"
+                                class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/mongodb.svg"
+                                alt="mongodb">
+                            <div id="tooltip-mongodb" role="tooltip"
+                                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                MongoDB
+                                <div class="tooltip-arrow" data-popper-arrow></div>
+                            </div>
+                            <div class="w-full">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-base font-medium text-black dark:text-black">Junior</span>
+                                    <span class="text-sm font-medium text-black dark:text-black">Middle</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                    <div class="bg-green-600 h-2.5 rounded-full dark:bg-red-500" style="width: 45%">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="mb-12">
+                <div id="others" class="mb-12">
                     <h2 class="text-3xl">Others</h2>
-                    <div class="ml-6">
-                        <div class="mb-1 text-base font-medium dark:text-black">Dark</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                            <div class="bg-gray-600 h-2.5 rounded-full dark:bg-gray-300" style="width: 45%"></div>
+                    <div class="flex items-center w-1/4">
+                        <img id="dockerImg" data-tooltip-target="tooltip-docker"
+                            class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/docker.svg" alt="docker">
+                        <div id="tooltip-docker" role="tooltip"
+                            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                            Docker
+                            <div class="tooltip-arrow" data-popper-arrow></div>
                         </div>
-                        <div class="mb-1 text-base font-medium text-blue-700 dark:text-blue-500">Blue</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
-                        </div>
-                        <div class="mb-1 text-base font-medium text-red-700 dark:text-red-500">Red</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                            <div class="bg-red-600 h-2.5 rounded-full dark:bg-red-500" style="width: 45%"></div>
-                        </div>
-                        <div class="mb-1 text-base font-medium text-green-700 dark:text-green-500">Green</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                            <div class="bg-green-600 h-2.5 rounded-full dark:bg-green-500" style="width: 45%"></div>
-                        </div>
-                        <div class="mb-1 text-base font-medium text-yellow-700 dark:text-yellow-500">Yellow</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                            <div class="bg-yellow-400 h-2.5 rounded-full" style="width: 45%"></div>
-                        </div>
-                        <div class="mb-1 text-base font-medium text-indigo-700 dark:text-indigo-500">Indigo</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                            <div class="bg-indigo-600 h-2.5 rounded-full dark:bg-indigo-500" style="width: 45%"></div>
-                        </div>
-                        <div class="mb-1 text-base font-medium text-purple-700 dark:text-purple-500">Purple</div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                            <div class="bg-purple-600 h-2.5 rounded-full dark:bg-purple-500" style="width: 45%"></div>
+                        <div class="w-full">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-black dark:text-black">Junior</span>
+                                <span class="text-sm font-medium text-black dark:text-black">Middle</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full dark:bg-red-500" style="width: 45%">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+    </div>
 
-        <section id="Projects" class="container my-5">
 
-            <h1 class="text-6xl">Projects</h1>
-            <div class="bg-white py-24 sm:py-32">
-                <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div class="mx-auto max-w-2xl lg:mx-0">
-                        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Personal Projects
-                        </h2>
-                        <p class="mt-2 text-lg leading-8 text-gray-600">Watch my most recent and professional
-                            projects.
-                        </p>
+    <section id="Projects" class="container my-5">
+
+        <h1 class="text-6xl">Projects</h1>
+        <div class="bg-white py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl lg:mx-0">
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Personal Projects
+                    </h2>
+                    <p class="mt-2 text-lg leading-8 text-gray-600">Watch my most recent and professional
+                        projects.
+                    </p>
+                </div>
+                <div
+                    class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+
+                    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                        <!-- Carousel wrapper -->
+                        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                            <!-- Item 2 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 5 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 6 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <!-- Slider indicators -->
+                        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                                data-carousel-slide-to="0"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                                data-carousel-slide-to="1"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                                data-carousel-slide-to="2"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                                data-carousel-slide-to="3"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                                data-carousel-slide-to="4"></button>
+                        </div>
+                        <!-- Slider controls -->
+                        <button type="button"
+                            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                            data-carousel-prev>
+                            <span
+                                class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                                <span class="sr-only">Previous</span>
+                            </span>
+                        </button>
+                        <button type="button"
+                            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                            data-carousel-next>
+                            <span
+                                class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                                <span class="sr-only">Next</span>
+                            </span>
+                        </button>
                     </div>
+
                     <div
-                        class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-
-                        <div id="default-carousel" class="relative w-full" data-carousel="slide">
-                            <!-- Carousel wrapper -->
-                            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                                <!-- Item 2 -->
-                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                    <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                        alt="...">
-                                </div>
-                                <!-- Item 3 -->
-                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                    <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
-                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                        alt="...">
-                                </div>
-                                <!-- Item 4 -->
-                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                    <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
-                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                        alt="...">
-                                </div>
-                                <!-- Item 5 -->
-                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                    <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
-                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                        alt="...">
-                                </div>
-                                <!-- Item 6 -->
-                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                    <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
-                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                        alt="...">
-                                </div>
-                            </div>
-                            <!-- Slider indicators -->
-                            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                                <button type="button" class="w-3 h-3 rounded-full" aria-current="true"
-                                    aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
-                                    aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
-                                    aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
-                                    aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
-                                    aria-label="Slide 5" data-carousel-slide-to="4"></button>
-                            </div>
-                            <!-- Slider controls -->
-                            <button type="button"
-                                class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                                data-carousel-prev>
-                                <span
-                                    class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                                    <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
-                                        fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M15 19l-7-7 7-7"></path>
-                                    </svg>
-                                    <span class="sr-only">Previous</span>
-                                </span>
-                            </button>
-                            <button type="button"
-                                class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                                data-carousel-next>
-                                <span
-                                    class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                                    <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
-                                        fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 5l7 7-7 7"></path>
-                                    </svg>
-                                    <span class="sr-only">Next</span>
-                                </span>
-                            </button>
-                        </div>
-
-                        <div
-                            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
+                        </a>
+                        <div class="p-5">
                             <a href="#">
-                                <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg"
-                                    alt="" />
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                    Noteworthy technology acquisitions 2021</h5>
                             </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                        Noteworthy technology acquisitions 2021</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest
-                                    enterprise technology acquisitions of 2021 so far, in reverse chronological
-                                    order.
-                                </p>
-                                <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor"
-                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest
+                                enterprise technology acquisitions of 2021 so far, in reverse chronological
+                                order.
+                            </p>
+                            <a href="#"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Read more
+                                <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="About" class="container my-5">
+        <h1 class="text-6xl">About</h1>
+        <!-- ====== About Section Start -->
+        <section class="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
+            <div class="container mx-auto">
+                <div class="-mx-4 flex flex-wrap items-center justify-between">
+                    <div class="w-full px-4 lg:w-6/12">
+                        <div class="-mx-3 flex items-center sm:-mx-4">
+                            <div class="w-full px-3 sm:px-4 xl:w-1/2">
+                                <div class="py-3 sm:py-4">
+                                    <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-1.jpg"
+                                        alt="" class="w-full rounded-2xl" />
+                                </div>
+                                <div class="py-3 sm:py-4">
+                                    <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-2.jpg"
+                                        alt="" class="w-full rounded-2xl" />
+                                </div>
+                            </div>
+                            <div class="w-full px-3 sm:px-4 xl:w-1/2">
+                                <div class="relative z-10 my-4">
+                                    <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-3.jpg"
+                                        alt="" class="w-full rounded-2xl" />
+                                    <span class="absolute -right-7 -bottom-7 z-[-1]">
+                                        <svg width="134" height="106" viewBox="0 0 134 106" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="1.66667" cy="104" r="1.66667"
+                                                transform="rotate(-90 1.66667 104)" fill="#3056D3" />
+                                            <circle cx="16.3333" cy="104" r="1.66667"
+                                                transform="rotate(-90 16.3333 104)" fill="#3056D3" />
+                                            <circle cx="31" cy="104" r="1.66667" transform="rotate(-90 31 104)"
+                                                fill="#3056D3" />
+                                            <circle cx="45.6667" cy="104" r="1.66667"
+                                                transform="rotate(-90 45.6667 104)" fill="#3056D3" />
+                                            <circle cx="60.3334" cy="104" r="1.66667"
+                                                transform="rotate(-90 60.3334 104)" fill="#3056D3" />
+                                            <circle cx="88.6667" cy="104" r="1.66667"
+                                                transform="rotate(-90 88.6667 104)" fill="#3056D3" />
+                                            <circle cx="117.667" cy="104" r="1.66667"
+                                                transform="rotate(-90 117.667 104)" fill="#3056D3" />
+                                            <circle cx="74.6667" cy="104" r="1.66667"
+                                                transform="rotate(-90 74.6667 104)" fill="#3056D3" />
+                                            <circle cx="103" cy="104" r="1.66667" transform="rotate(-90 103 104)"
+                                                fill="#3056D3" />
+                                            <circle cx="132" cy="104" r="1.66667" transform="rotate(-90 132 104)"
+                                                fill="#3056D3" />
+                                            <circle cx="1.66667" cy="89.3333" r="1.66667"
+                                                transform="rotate(-90 1.66667 89.3333)" fill="#3056D3" />
+                                            <circle cx="16.3333" cy="89.3333" r="1.66667"
+                                                transform="rotate(-90 16.3333 89.3333)" fill="#3056D3" />
+                                            <circle cx="31" cy="89.3333" r="1.66667" transform="rotate(-90 31 89.3333)"
+                                                fill="#3056D3" />
+                                            <circle cx="45.6667" cy="89.3333" r="1.66667"
+                                                transform="rotate(-90 45.6667 89.3333)" fill="#3056D3" />
+                                            <circle cx="60.3333" cy="89.3338" r="1.66667"
+                                                transform="rotate(-90 60.3333 89.3338)" fill="#3056D3" />
+                                            <circle cx="88.6667" cy="89.3338" r="1.66667"
+                                                transform="rotate(-90 88.6667 89.3338)" fill="#3056D3" />
+                                            <circle cx="117.667" cy="89.3338" r="1.66667"
+                                                transform="rotate(-90 117.667 89.3338)" fill="#3056D3" />
+                                            <circle cx="74.6667" cy="89.3338" r="1.66667"
+                                                transform="rotate(-90 74.6667 89.3338)" fill="#3056D3" />
+                                            <circle cx="103" cy="89.3338" r="1.66667"
+                                                transform="rotate(-90 103 89.3338)" fill="#3056D3" />
+                                            <circle cx="132" cy="89.3338" r="1.66667"
+                                                transform="rotate(-90 132 89.3338)" fill="#3056D3" />
+                                            <circle cx="1.66667" cy="74.6673" r="1.66667"
+                                                transform="rotate(-90 1.66667 74.6673)" fill="#3056D3" />
+                                            <circle cx="1.66667" cy="31.0003" r="1.66667"
+                                                transform="rotate(-90 1.66667 31.0003)" fill="#3056D3" />
+                                            <circle cx="16.3333" cy="74.6668" r="1.66667"
+                                                transform="rotate(-90 16.3333 74.6668)" fill="#3056D3" />
+                                            <circle cx="16.3333" cy="31.0003" r="1.66667"
+                                                transform="rotate(-90 16.3333 31.0003)" fill="#3056D3" />
+                                            <circle cx="31" cy="74.6668" r="1.66667" transform="rotate(-90 31 74.6668)"
+                                                fill="#3056D3" />
+                                            <circle cx="31" cy="31.0003" r="1.66667" transform="rotate(-90 31 31.0003)"
+                                                fill="#3056D3" />
+                                            <circle cx="45.6667" cy="74.6668" r="1.66667"
+                                                transform="rotate(-90 45.6667 74.6668)" fill="#3056D3" />
+                                            <circle cx="45.6667" cy="31.0003" r="1.66667"
+                                                transform="rotate(-90 45.6667 31.0003)" fill="#3056D3" />
+                                            <circle cx="60.3333" cy="74.6668" r="1.66667"
+                                                transform="rotate(-90 60.3333 74.6668)" fill="#3056D3" />
+                                            <circle cx="60.3333" cy="30.9998" r="1.66667"
+                                                transform="rotate(-90 60.3333 30.9998)" fill="#3056D3" />
+                                            <circle cx="88.6667" cy="74.6668" r="1.66667"
+                                                transform="rotate(-90 88.6667 74.6668)" fill="#3056D3" />
+                                            <circle cx="88.6667" cy="30.9998" r="1.66667"
+                                                transform="rotate(-90 88.6667 30.9998)" fill="#3056D3" />
+                                            <circle cx="117.667" cy="74.6668" r="1.66667"
+                                                transform="rotate(-90 117.667 74.6668)" fill="#3056D3" />
+                                            <circle cx="117.667" cy="30.9998" r="1.66667"
+                                                transform="rotate(-90 117.667 30.9998)" fill="#3056D3" />
+                                            <circle cx="74.6667" cy="74.6668" r="1.66667"
+                                                transform="rotate(-90 74.6667 74.6668)" fill="#3056D3" />
+                                            <circle cx="74.6667" cy="30.9998" r="1.66667"
+                                                transform="rotate(-90 74.6667 30.9998)" fill="#3056D3" />
+                                            <circle cx="103" cy="74.6668" r="1.66667"
+                                                transform="rotate(-90 103 74.6668)" fill="#3056D3" />
+                                            <circle cx="103" cy="30.9998" r="1.66667"
+                                                transform="rotate(-90 103 30.9998)" fill="#3056D3" />
+                                            <circle cx="132" cy="74.6668" r="1.66667"
+                                                transform="rotate(-90 132 74.6668)" fill="#3056D3" />
+                                            <circle cx="132" cy="30.9998" r="1.66667"
+                                                transform="rotate(-90 132 30.9998)" fill="#3056D3" />
+                                            <circle cx="1.66667" cy="60.0003" r="1.66667"
+                                                transform="rotate(-90 1.66667 60.0003)" fill="#3056D3" />
+                                            <circle cx="1.66667" cy="16.3333" r="1.66667"
+                                                transform="rotate(-90 1.66667 16.3333)" fill="#3056D3" />
+                                            <circle cx="16.3333" cy="60.0003" r="1.66667"
+                                                transform="rotate(-90 16.3333 60.0003)" fill="#3056D3" />
+                                            <circle cx="16.3333" cy="16.3333" r="1.66667"
+                                                transform="rotate(-90 16.3333 16.3333)" fill="#3056D3" />
+                                            <circle cx="31" cy="60.0003" r="1.66667" transform="rotate(-90 31 60.0003)"
+                                                fill="#3056D3" />
+                                            <circle cx="31" cy="16.3333" r="1.66667" transform="rotate(-90 31 16.3333)"
+                                                fill="#3056D3" />
+                                            <circle cx="45.6667" cy="60.0003" r="1.66667"
+                                                transform="rotate(-90 45.6667 60.0003)" fill="#3056D3" />
+                                            <circle cx="45.6667" cy="16.3333" r="1.66667"
+                                                transform="rotate(-90 45.6667 16.3333)" fill="#3056D3" />
+                                            <circle cx="60.3333" cy="60.0003" r="1.66667"
+                                                transform="rotate(-90 60.3333 60.0003)" fill="#3056D3" />
+                                            <circle cx="60.3333" cy="16.3333" r="1.66667"
+                                                transform="rotate(-90 60.3333 16.3333)" fill="#3056D3" />
+                                            <circle cx="88.6667" cy="60.0003" r="1.66667"
+                                                transform="rotate(-90 88.6667 60.0003)" fill="#3056D3" />
+                                            <circle cx="88.6667" cy="16.3333" r="1.66667"
+                                                transform="rotate(-90 88.6667 16.3333)" fill="#3056D3" />
+                                            <circle cx="117.667" cy="60.0003" r="1.66667"
+                                                transform="rotate(-90 117.667 60.0003)" fill="#3056D3" />
+                                            <circle cx="117.667" cy="16.3333" r="1.66667"
+                                                transform="rotate(-90 117.667 16.3333)" fill="#3056D3" />
+                                            <circle cx="74.6667" cy="60.0003" r="1.66667"
+                                                transform="rotate(-90 74.6667 60.0003)" fill="#3056D3" />
+                                            <circle cx="74.6667" cy="16.3333" r="1.66667"
+                                                transform="rotate(-90 74.6667 16.3333)" fill="#3056D3" />
+                                            <circle cx="103" cy="60.0003" r="1.66667"
+                                                transform="rotate(-90 103 60.0003)" fill="#3056D3" />
+                                            <circle cx="103" cy="16.3333" r="1.66667"
+                                                transform="rotate(-90 103 16.3333)" fill="#3056D3" />
+                                            <circle cx="132" cy="60.0003" r="1.66667"
+                                                transform="rotate(-90 132 60.0003)" fill="#3056D3" />
+                                            <circle cx="132" cy="16.3333" r="1.66667"
+                                                transform="rotate(-90 132 16.3333)" fill="#3056D3" />
+                                            <circle cx="1.66667" cy="45.3333" r="1.66667"
+                                                transform="rotate(-90 1.66667 45.3333)" fill="#3056D3" />
+                                            <circle cx="1.66667" cy="1.66683" r="1.66667"
+                                                transform="rotate(-90 1.66667 1.66683)" fill="#3056D3" />
+                                            <circle cx="16.3333" cy="45.3333" r="1.66667"
+                                                transform="rotate(-90 16.3333 45.3333)" fill="#3056D3" />
+                                            <circle cx="16.3333" cy="1.66683" r="1.66667"
+                                                transform="rotate(-90 16.3333 1.66683)" fill="#3056D3" />
+                                            <circle cx="31" cy="45.3333" r="1.66667" transform="rotate(-90 31 45.3333)"
+                                                fill="#3056D3" />
+                                            <circle cx="31" cy="1.66683" r="1.66667" transform="rotate(-90 31 1.66683)"
+                                                fill="#3056D3" />
+                                            <circle cx="45.6667" cy="45.3333" r="1.66667"
+                                                transform="rotate(-90 45.6667 45.3333)" fill="#3056D3" />
+                                            <circle cx="45.6667" cy="1.66683" r="1.66667"
+                                                transform="rotate(-90 45.6667 1.66683)" fill="#3056D3" />
+                                            <circle cx="60.3333" cy="45.3338" r="1.66667"
+                                                transform="rotate(-90 60.3333 45.3338)" fill="#3056D3" />
+                                            <circle cx="60.3333" cy="1.66683" r="1.66667"
+                                                transform="rotate(-90 60.3333 1.66683)" fill="#3056D3" />
+                                            <circle cx="88.6667" cy="45.3338" r="1.66667"
+                                                transform="rotate(-90 88.6667 45.3338)" fill="#3056D3" />
+                                            <circle cx="88.6667" cy="1.66683" r="1.66667"
+                                                transform="rotate(-90 88.6667 1.66683)" fill="#3056D3" />
+                                            <circle cx="117.667" cy="45.3338" r="1.66667"
+                                                transform="rotate(-90 117.667 45.3338)" fill="#3056D3" />
+                                            <circle cx="117.667" cy="1.66683" r="1.66667"
+                                                transform="rotate(-90 117.667 1.66683)" fill="#3056D3" />
+                                            <circle cx="74.6667" cy="45.3338" r="1.66667"
+                                                transform="rotate(-90 74.6667 45.3338)" fill="#3056D3" />
+                                            <circle cx="74.6667" cy="1.66683" r="1.66667"
+                                                transform="rotate(-90 74.6667 1.66683)" fill="#3056D3" />
+                                            <circle cx="103" cy="45.3338" r="1.66667"
+                                                transform="rotate(-90 103 45.3338)" fill="#3056D3" />
+                                            <circle cx="103" cy="1.66683" r="1.66667"
+                                                transform="rotate(-90 103 1.66683)" fill="#3056D3" />
+                                            <circle cx="132" cy="45.3338" r="1.66667"
+                                                transform="rotate(-90 132 45.3338)" fill="#3056D3" />
+                                            <circle cx="132" cy="1.66683" r="1.66667"
+                                                transform="rotate(-90 132 1.66683)" fill="#3056D3" />
+                                        </svg>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-
+                    </div>
+                    <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
+                        <div class="mt-10 lg:mt-0">
+                            <span class="text-primary mb-2 block text-lg font-semibold">
+                                Why Choose Us
+                            </span>
+                            <h2 class="text-dark mb-8 text-3xl font-bold sm:text-4xl">
+                                Make your customers happy by giving services.
+                            </h2>
+                            <p class="text-body-color mb-8 text-base">
+                                It is a long established fact that a reader will be distracted by
+                                the readable content of a page when looking at its layout. The point
+                                of using Lorem Ipsum is that it has a more-or-less.
+                            </p>
+                            <p class="text-body-color mb-12 text-base">
+                                A domain name is one of the first steps to establishing your brand.
+                                Secure a consistent brand image with a domain name that matches your
+                                business.
+                            </p>
+                            <a href="javascript:void(0)"
+                                class="bg-primary inline-flex items-center justify-center rounded-lg py-4 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
+                                Get Started
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- ====== About Section End -->
 
-        <section id="About" class="container my-5">
-            <h1 class="text-6xl">About</h1>
-            <!-- ====== About Section Start -->
-            <section class="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
-                <div class="container mx-auto">
-                    <div class="-mx-4 flex flex-wrap items-center justify-between">
-                        <div class="w-full px-4 lg:w-6/12">
-                            <div class="-mx-3 flex items-center sm:-mx-4">
-                                <div class="w-full px-3 sm:px-4 xl:w-1/2">
-                                    <div class="py-3 sm:py-4">
-                                        <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-1.jpg"
-                                            alt="" class="w-full rounded-2xl" />
-                                    </div>
-                                    <div class="py-3 sm:py-4">
-                                        <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-2.jpg"
-                                            alt="" class="w-full rounded-2xl" />
-                                    </div>
-                                </div>
-                                <div class="w-full px-3 sm:px-4 xl:w-1/2">
-                                    <div class="relative z-10 my-4">
-                                        <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-3.jpg"
-                                            alt="" class="w-full rounded-2xl" />
-                                        <span class="absolute -right-7 -bottom-7 z-[-1]">
-                                            <svg width="134" height="106" viewBox="0 0 134 106" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="1.66667" cy="104" r="1.66667"
-                                                    transform="rotate(-90 1.66667 104)" fill="#3056D3" />
-                                                <circle cx="16.3333" cy="104" r="1.66667"
-                                                    transform="rotate(-90 16.3333 104)" fill="#3056D3" />
-                                                <circle cx="31" cy="104" r="1.66667" transform="rotate(-90 31 104)"
-                                                    fill="#3056D3" />
-                                                <circle cx="45.6667" cy="104" r="1.66667"
-                                                    transform="rotate(-90 45.6667 104)" fill="#3056D3" />
-                                                <circle cx="60.3334" cy="104" r="1.66667"
-                                                    transform="rotate(-90 60.3334 104)" fill="#3056D3" />
-                                                <circle cx="88.6667" cy="104" r="1.66667"
-                                                    transform="rotate(-90 88.6667 104)" fill="#3056D3" />
-                                                <circle cx="117.667" cy="104" r="1.66667"
-                                                    transform="rotate(-90 117.667 104)" fill="#3056D3" />
-                                                <circle cx="74.6667" cy="104" r="1.66667"
-                                                    transform="rotate(-90 74.6667 104)" fill="#3056D3" />
-                                                <circle cx="103" cy="104" r="1.66667" transform="rotate(-90 103 104)"
-                                                    fill="#3056D3" />
-                                                <circle cx="132" cy="104" r="1.66667" transform="rotate(-90 132 104)"
-                                                    fill="#3056D3" />
-                                                <circle cx="1.66667" cy="89.3333" r="1.66667"
-                                                    transform="rotate(-90 1.66667 89.3333)" fill="#3056D3" />
-                                                <circle cx="16.3333" cy="89.3333" r="1.66667"
-                                                    transform="rotate(-90 16.3333 89.3333)" fill="#3056D3" />
-                                                <circle cx="31" cy="89.3333" r="1.66667"
-                                                    transform="rotate(-90 31 89.3333)" fill="#3056D3" />
-                                                <circle cx="45.6667" cy="89.3333" r="1.66667"
-                                                    transform="rotate(-90 45.6667 89.3333)" fill="#3056D3" />
-                                                <circle cx="60.3333" cy="89.3338" r="1.66667"
-                                                    transform="rotate(-90 60.3333 89.3338)" fill="#3056D3" />
-                                                <circle cx="88.6667" cy="89.3338" r="1.66667"
-                                                    transform="rotate(-90 88.6667 89.3338)" fill="#3056D3" />
-                                                <circle cx="117.667" cy="89.3338" r="1.66667"
-                                                    transform="rotate(-90 117.667 89.3338)" fill="#3056D3" />
-                                                <circle cx="74.6667" cy="89.3338" r="1.66667"
-                                                    transform="rotate(-90 74.6667 89.3338)" fill="#3056D3" />
-                                                <circle cx="103" cy="89.3338" r="1.66667"
-                                                    transform="rotate(-90 103 89.3338)" fill="#3056D3" />
-                                                <circle cx="132" cy="89.3338" r="1.66667"
-                                                    transform="rotate(-90 132 89.3338)" fill="#3056D3" />
-                                                <circle cx="1.66667" cy="74.6673" r="1.66667"
-                                                    transform="rotate(-90 1.66667 74.6673)" fill="#3056D3" />
-                                                <circle cx="1.66667" cy="31.0003" r="1.66667"
-                                                    transform="rotate(-90 1.66667 31.0003)" fill="#3056D3" />
-                                                <circle cx="16.3333" cy="74.6668" r="1.66667"
-                                                    transform="rotate(-90 16.3333 74.6668)" fill="#3056D3" />
-                                                <circle cx="16.3333" cy="31.0003" r="1.66667"
-                                                    transform="rotate(-90 16.3333 31.0003)" fill="#3056D3" />
-                                                <circle cx="31" cy="74.6668" r="1.66667"
-                                                    transform="rotate(-90 31 74.6668)" fill="#3056D3" />
-                                                <circle cx="31" cy="31.0003" r="1.66667"
-                                                    transform="rotate(-90 31 31.0003)" fill="#3056D3" />
-                                                <circle cx="45.6667" cy="74.6668" r="1.66667"
-                                                    transform="rotate(-90 45.6667 74.6668)" fill="#3056D3" />
-                                                <circle cx="45.6667" cy="31.0003" r="1.66667"
-                                                    transform="rotate(-90 45.6667 31.0003)" fill="#3056D3" />
-                                                <circle cx="60.3333" cy="74.6668" r="1.66667"
-                                                    transform="rotate(-90 60.3333 74.6668)" fill="#3056D3" />
-                                                <circle cx="60.3333" cy="30.9998" r="1.66667"
-                                                    transform="rotate(-90 60.3333 30.9998)" fill="#3056D3" />
-                                                <circle cx="88.6667" cy="74.6668" r="1.66667"
-                                                    transform="rotate(-90 88.6667 74.6668)" fill="#3056D3" />
-                                                <circle cx="88.6667" cy="30.9998" r="1.66667"
-                                                    transform="rotate(-90 88.6667 30.9998)" fill="#3056D3" />
-                                                <circle cx="117.667" cy="74.6668" r="1.66667"
-                                                    transform="rotate(-90 117.667 74.6668)" fill="#3056D3" />
-                                                <circle cx="117.667" cy="30.9998" r="1.66667"
-                                                    transform="rotate(-90 117.667 30.9998)" fill="#3056D3" />
-                                                <circle cx="74.6667" cy="74.6668" r="1.66667"
-                                                    transform="rotate(-90 74.6667 74.6668)" fill="#3056D3" />
-                                                <circle cx="74.6667" cy="30.9998" r="1.66667"
-                                                    transform="rotate(-90 74.6667 30.9998)" fill="#3056D3" />
-                                                <circle cx="103" cy="74.6668" r="1.66667"
-                                                    transform="rotate(-90 103 74.6668)" fill="#3056D3" />
-                                                <circle cx="103" cy="30.9998" r="1.66667"
-                                                    transform="rotate(-90 103 30.9998)" fill="#3056D3" />
-                                                <circle cx="132" cy="74.6668" r="1.66667"
-                                                    transform="rotate(-90 132 74.6668)" fill="#3056D3" />
-                                                <circle cx="132" cy="30.9998" r="1.66667"
-                                                    transform="rotate(-90 132 30.9998)" fill="#3056D3" />
-                                                <circle cx="1.66667" cy="60.0003" r="1.66667"
-                                                    transform="rotate(-90 1.66667 60.0003)" fill="#3056D3" />
-                                                <circle cx="1.66667" cy="16.3333" r="1.66667"
-                                                    transform="rotate(-90 1.66667 16.3333)" fill="#3056D3" />
-                                                <circle cx="16.3333" cy="60.0003" r="1.66667"
-                                                    transform="rotate(-90 16.3333 60.0003)" fill="#3056D3" />
-                                                <circle cx="16.3333" cy="16.3333" r="1.66667"
-                                                    transform="rotate(-90 16.3333 16.3333)" fill="#3056D3" />
-                                                <circle cx="31" cy="60.0003" r="1.66667"
-                                                    transform="rotate(-90 31 60.0003)" fill="#3056D3" />
-                                                <circle cx="31" cy="16.3333" r="1.66667"
-                                                    transform="rotate(-90 31 16.3333)" fill="#3056D3" />
-                                                <circle cx="45.6667" cy="60.0003" r="1.66667"
-                                                    transform="rotate(-90 45.6667 60.0003)" fill="#3056D3" />
-                                                <circle cx="45.6667" cy="16.3333" r="1.66667"
-                                                    transform="rotate(-90 45.6667 16.3333)" fill="#3056D3" />
-                                                <circle cx="60.3333" cy="60.0003" r="1.66667"
-                                                    transform="rotate(-90 60.3333 60.0003)" fill="#3056D3" />
-                                                <circle cx="60.3333" cy="16.3333" r="1.66667"
-                                                    transform="rotate(-90 60.3333 16.3333)" fill="#3056D3" />
-                                                <circle cx="88.6667" cy="60.0003" r="1.66667"
-                                                    transform="rotate(-90 88.6667 60.0003)" fill="#3056D3" />
-                                                <circle cx="88.6667" cy="16.3333" r="1.66667"
-                                                    transform="rotate(-90 88.6667 16.3333)" fill="#3056D3" />
-                                                <circle cx="117.667" cy="60.0003" r="1.66667"
-                                                    transform="rotate(-90 117.667 60.0003)" fill="#3056D3" />
-                                                <circle cx="117.667" cy="16.3333" r="1.66667"
-                                                    transform="rotate(-90 117.667 16.3333)" fill="#3056D3" />
-                                                <circle cx="74.6667" cy="60.0003" r="1.66667"
-                                                    transform="rotate(-90 74.6667 60.0003)" fill="#3056D3" />
-                                                <circle cx="74.6667" cy="16.3333" r="1.66667"
-                                                    transform="rotate(-90 74.6667 16.3333)" fill="#3056D3" />
-                                                <circle cx="103" cy="60.0003" r="1.66667"
-                                                    transform="rotate(-90 103 60.0003)" fill="#3056D3" />
-                                                <circle cx="103" cy="16.3333" r="1.66667"
-                                                    transform="rotate(-90 103 16.3333)" fill="#3056D3" />
-                                                <circle cx="132" cy="60.0003" r="1.66667"
-                                                    transform="rotate(-90 132 60.0003)" fill="#3056D3" />
-                                                <circle cx="132" cy="16.3333" r="1.66667"
-                                                    transform="rotate(-90 132 16.3333)" fill="#3056D3" />
-                                                <circle cx="1.66667" cy="45.3333" r="1.66667"
-                                                    transform="rotate(-90 1.66667 45.3333)" fill="#3056D3" />
-                                                <circle cx="1.66667" cy="1.66683" r="1.66667"
-                                                    transform="rotate(-90 1.66667 1.66683)" fill="#3056D3" />
-                                                <circle cx="16.3333" cy="45.3333" r="1.66667"
-                                                    transform="rotate(-90 16.3333 45.3333)" fill="#3056D3" />
-                                                <circle cx="16.3333" cy="1.66683" r="1.66667"
-                                                    transform="rotate(-90 16.3333 1.66683)" fill="#3056D3" />
-                                                <circle cx="31" cy="45.3333" r="1.66667"
-                                                    transform="rotate(-90 31 45.3333)" fill="#3056D3" />
-                                                <circle cx="31" cy="1.66683" r="1.66667"
-                                                    transform="rotate(-90 31 1.66683)" fill="#3056D3" />
-                                                <circle cx="45.6667" cy="45.3333" r="1.66667"
-                                                    transform="rotate(-90 45.6667 45.3333)" fill="#3056D3" />
-                                                <circle cx="45.6667" cy="1.66683" r="1.66667"
-                                                    transform="rotate(-90 45.6667 1.66683)" fill="#3056D3" />
-                                                <circle cx="60.3333" cy="45.3338" r="1.66667"
-                                                    transform="rotate(-90 60.3333 45.3338)" fill="#3056D3" />
-                                                <circle cx="60.3333" cy="1.66683" r="1.66667"
-                                                    transform="rotate(-90 60.3333 1.66683)" fill="#3056D3" />
-                                                <circle cx="88.6667" cy="45.3338" r="1.66667"
-                                                    transform="rotate(-90 88.6667 45.3338)" fill="#3056D3" />
-                                                <circle cx="88.6667" cy="1.66683" r="1.66667"
-                                                    transform="rotate(-90 88.6667 1.66683)" fill="#3056D3" />
-                                                <circle cx="117.667" cy="45.3338" r="1.66667"
-                                                    transform="rotate(-90 117.667 45.3338)" fill="#3056D3" />
-                                                <circle cx="117.667" cy="1.66683" r="1.66667"
-                                                    transform="rotate(-90 117.667 1.66683)" fill="#3056D3" />
-                                                <circle cx="74.6667" cy="45.3338" r="1.66667"
-                                                    transform="rotate(-90 74.6667 45.3338)" fill="#3056D3" />
-                                                <circle cx="74.6667" cy="1.66683" r="1.66667"
-                                                    transform="rotate(-90 74.6667 1.66683)" fill="#3056D3" />
-                                                <circle cx="103" cy="45.3338" r="1.66667"
-                                                    transform="rotate(-90 103 45.3338)" fill="#3056D3" />
-                                                <circle cx="103" cy="1.66683" r="1.66667"
-                                                    transform="rotate(-90 103 1.66683)" fill="#3056D3" />
-                                                <circle cx="132" cy="45.3338" r="1.66667"
-                                                    transform="rotate(-90 132 45.3338)" fill="#3056D3" />
-                                                <circle cx="132" cy="1.66683" r="1.66667"
-                                                    transform="rotate(-90 132 1.66683)" fill="#3056D3" />
-                                            </svg>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
-                            <div class="mt-10 lg:mt-0">
-                                <span class="text-primary mb-2 block text-lg font-semibold">
-                                    Why Choose Us
-                                </span>
-                                <h2 class="text-dark mb-8 text-3xl font-bold sm:text-4xl">
-                                    Make your customers happy by giving services.
-                                </h2>
-                                <p class="text-body-color mb-8 text-base">
-                                    It is a long established fact that a reader will be distracted by
-                                    the readable content of a page when looking at its layout. The point
-                                    of using Lorem Ipsum is that it has a more-or-less.
-                                </p>
-                                <p class="text-body-color mb-12 text-base">
-                                    A domain name is one of the first steps to establishing your brand.
-                                    Secure a consistent brand image with a domain name that matches your
-                                    business.
-                                </p>
-                                <a href="javascript:void(0)"
-                                    class="bg-primary inline-flex items-center justify-center rounded-lg py-4 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
-                                    Get Started
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- ====== About Section End -->
-
-        </section>
+    </section>
     </div>
 
     <div id="bottomContainer" class="pt-5 mx-auto">
