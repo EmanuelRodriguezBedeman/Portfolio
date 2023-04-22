@@ -372,25 +372,93 @@
         <section id="Skills" class="container mt-5 w-full h-full mx-auto mb-10 bg-black bg-opacity-25">
             <h1 class="text-4xl text-white">Skillset:</h1>
             <div id="skillCard"
-                class="block rounded-lg text-xl font-medium bg-white text-center shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] w-fit h-fit">
-                <div class="border-b-2 border-neutral-100 px-6 py-3">
+                class="block rounded-lg text-xl font-medium bg-white text-center shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] w-full h-fit">
+                <div class="border-b-2 border-neutral-100 bg-gray-300 px-6 py-3">
                     Data Analysis
                 </div>
                 <div class="p-6">
-                    <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                    <!-- <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
                         Special title treatment
-                    </h5>
-                    <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                        With supporting text below as a natural lead-in to additional
-                        content.
+                    </h5> -->
+                    <p class="text-start text-base text-neutral-600 mb-4">
+                        Tools I use on my day-to-day work at <span class="text-base text-neutral-800">UBATIC</span>, a
+                        laboratory which depends on UBA Medicine School.
                     </p>
-                    <button type="button"
-                        class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
-                        data-te-ripple-init data-te-ripple-color="light">
-                        Button
-                    </button>
+
+                    <div class="flex items-center md:mr-3">
+                        <img id="pythonImg" data-tooltip-target="tooltip-python"
+                            class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/python.svg" alt="python">
+                        <div id="tooltip-python" role="tooltip"
+                            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
+                            Python
+                            <div class="tooltip-arrow" data-popper-arrow></div>
+                        </div>
+                        <div class="w-full">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-black">Jr</span>
+                                <span class="text-sm font-medium text-black">S-Sr</span>
+                            </div>
+                            <div class="bg-blue-600 bg-opacity-25 rounded-full h-2.5 mb-4">
+                                <div class="bg-yellow-300 h-2.5 rounded-full" style="width: 45%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center md:mr-3">
+                        <img id="sqlImg" data-tooltip-target="tooltip-sql"
+                            class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/sql.svg" alt="sql">
+                        <div id="tooltip-sql" role="tooltip"
+                            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
+                            SQL
+                            <div class="tooltip-arrow" data-popper-arrow></div>
+                        </div>
+                        <div class="w-full">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-black">Jr</span>
+                                <span class="text-sm font-medium text-black">S-Sr</span>
+                            </div>
+                            <div class="bg-gray-400 bg-opacity-25 rounded-full h-2.5 mb-4">
+                                <div class="bg-cyan-600 h-2.5 rounded-full" style="width: 45%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center md:mr-3">
+                        <img id="gitGithubImg" data-tooltip-target="tooltip-git-github"
+                            class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/github.svg"
+                            alt="git-github">
+                        <div id="tooltip-git-github" role="tooltip"
+                            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
+                            Git / Github
+                            <div class="tooltip-arrow" data-popper-arrow></div>
+                        </div>
+                        <div class="w-full">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-black">Jr</span>
+                                <span class="text-sm font-medium text-black">S-Sr</span>
+                            </div>
+                            <div class="bg-gray-400 bg-opacity-25 rounded-full h-2.5 mb-4">
+                                <div class="bg-cyan-600 h-2.5 rounded-full" style="width: 45%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="text-start mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                        Other habilities I'm looking to learn:
+                    </h5>
+
+                    <div id="dataLearn" class="flex">
+                        <img id="grafanaImg" class="w-fit h-fit mr-3 rounded-md" src="src/imgs/grafana.svg"
+                            alt="grafana">
+
+                        <img id="scrumImg" class="w-fit h-fit mr-3 rounded-md" src="src/imgs/SCRUM.svg" alt="scrum">
+                    </div>
+
                 </div>
-                <div class="border-t-2 border-neutral-100 px-6 py-3">
+
+
+
+                <div class="border-t-2 border-neutral-100 text-base px-6 py-3">
                     2 days ago
                 </div>
             </div>
