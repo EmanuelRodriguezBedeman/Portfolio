@@ -378,14 +378,21 @@
             <!-- card that flips on hover -->
             <div class="group h-96 w-80 [perspective:1000px]">
                 <div
-                    class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                    class="relative h-full w-full rounded-t-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                     <div class="absolute inset-0">
-                        <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40"
-                            src="https://images.unsplash.com/photo-1562583489-bf23ec64651d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')"
+                        <img class="h-full w-full rounded-t-xl object-cover shadow-xl shadow-black/40"
+                            src="https://images.unsplash.com/photo-1562583489-bf23ec64651d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
                             alt="" />
+                        <div class="py-8 px-4 bg-white  rounded-b-md fd-cl group-hover:opacity-25">
+                            <span class="block text-lg text-gray-800 font-bold tracking-wide">Data Analysis</span>
+                            <span class="block text-gray-600 text-sm">Technologies I use on my day-to-day work at
+                                <span class="text-base text-neutral-800">UBATIC</span>, a
+                                laboratory which depends on UBA's Medicine School.
+                            </span>
+                        </div>
                     </div>
                     <div
-                        class="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                        class="absolute inset-0 h-full w-full rounded-t-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
                         <div class="flex min-h-full flex-col items-center justify-center">
                             <h1 class="text-3xl font-bold">Jane Doe</h1>
                             <p class="text-lg">Photographer & Art</p>
@@ -398,9 +405,9 @@
             </div>
 
             <!-- card that changes on hover -->
-            <div class="py-4">
+            <div class="py-4 mt-96">
                 <div
-                    class="shadow-lg group container  rounded-md bg-white  max-w-sm flex justify-center items-center  mx-auto content-div">
+                    class="shadow-lg group container rounded-md bg-white max-w-sm flex justify-center items-center mx-auto content-div">
                     <div>
                         <div class="w-full image-cover rounded-t-md">
                         </div>
