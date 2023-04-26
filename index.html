@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -376,29 +376,76 @@
             <h1 class="text-4xl text-white">Skillset:</h1>
 
             <!-- card that flips on hover -->
-            <div class="group h-96 w-80 [perspective:1000px]">
+            <div class="group h-96 w-80 [perspective:1000px] select-none">
                 <div
-                    class="relative h-full w-full rounded-t-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                    class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                     <div class="absolute inset-0">
-                        <img class="h-full w-full rounded-b-xl object-cover shadow-xl shadow-black/40 rotate-180"
+                        <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40 rotate-180"
                             src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80"
                             alt="" />
-                        <div class="p-4 bg-white  rounded-b-md fd-cl group-hover:opacity-25">
+                        <header>
+                            <h4
+                                class="absolute top-0 left-0 rounded-full bg-gray-300 px-1 text-lg text-gray-800 font-bold tracking-wide group-hover:hidden">
+                                Data Analysis
+                            </h4>
+                        </header>
+                        <footer>
+                            <h5
+                                class="absolute bottom-0 right-0 rounded-full bg-white p-2 px-1.5 text-center text-xs text-gray-800 font-bold leading-none group-hover:hidden">
+                                Hover <br> Me!
+                            </h5>
+                        </footer>
+                        <!-- <div class="p-4 bg-white rounded-b-md fd-cl group-hover:opacity-25">
                             <span class="block text-lg text-gray-800 font-bold tracking-wide">Data Analysis</span>
-                            <span class="block text-gray-600 text-sm">Technologies I use on my day-to-day work at
-                                <span class="text-base text-neutral-800">UBATIC</span>, a
-                                laboratory which depends on UBA's Medicine School.
+                            <span class="block text-gray-600 text-base">As my <span class="font-semibold">current
+                                    role</span> at <span class="italic">UBATIC
+                                    Project</span>,<br>my abilities include:
+                                <ul class="list-disc ml-6">
+                                    <li>
+                                        Exploratory Data Analysis
+                                    </li>
+                                    <li>
+                                        Data Visualization
+                                    </li>
+                                    <li>
+                                        Data Cleaning
+                                    </li>
+                                    <li>
+                                        Data Wrangling
+                                    </li>
+                                    <li>
+                                        Machine Learning
+                                    </li>
+                                </ul>
                             </span>
-                        </div>
+                        </div> -->
                     </div>
                     <div
-                        class="absolute inset-0 h-full w-full rounded-t-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                        <div class="flex min-h-full flex-col items-center justify-center">
-                            <h1 class="text-3xl font-bold">Jane Doe</h1>
-                            <p class="text-lg">Photographer & Art</p>
-                            <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            <button class="mt-2 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900">Read
-                                More</button>
+                        class="absolute top-0 h-full w-full rounded-xl bg-black/80 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                        <div class="flex h-fit flex-col items-center mt-4">
+                            <h1 class="text-3xl font-bold">Data Analyst</h1>
+                            <p class="text-lg">UBATIC</p>
+                            <p class="text-base mt-6">I have experience on:</p>
+                        </div>
+                        <!-- <ul class="w-full grid grid-cols-2 text-sm text-start list-disc mt-6 ml-6">
+                            <li>
+                                Exploratory Analysis
+                            </li>
+                            <li>
+                                Data Clearning
+                            </li>
+                            <li>
+                                Data Visualization
+                            </li>
+                            <li>
+                                Machine Learning
+                            </li>
+                        </ul> -->
+                        <div class="w-full grid grid-cols-2 gap-2 mx-auto text-sm text-center mt-6">
+                            <p class="">Exploratory Analysis</p>
+                            <p class="">Data Cleaning</p>
+                            <p class="">Data Visualization</p>
+                            <p class="">Machine Learning</p>
                         </div>
                     </div>
                 </div>
@@ -417,6 +464,23 @@
                                 <span class="text-base text-neutral-800">UBATIC</span>, a
                                 laboratory which depends on UBA's Medicine School.
                             </span>
+                            <ul class="list-disc ml-6">
+                                <li>
+                                    Exploratory Data Analysis
+                                </li>
+                                <li>
+                                    Data Visualization
+                                </li>
+                                <li>
+                                    Data Cleaning
+                                </li>
+                                <li>
+                                    Data Wrangling
+                                </li>
+                                <li>
+                                    Machine Learning
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="absolute opacity-0 fd-sh group-hover:opacity-100">
@@ -613,188 +677,6 @@
                                 <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
                                     <div class="bg-green-400 h-2.5 rounded-full" style="width: 45%"></div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h5 class="text-start mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                        Other habilities I'm looking to learn:
-                    </h5>
-
-                    <div id="dataLearn" class="flex">
-                        <img id="grafanaImg" class="w-fit h-fit mr-3" src="src/imgs/grafana.svg" alt="grafana">
-
-                        <img id="scrumImg" class="w-fit h-fit mr-3" src="src/imgs/scrum.svg" alt="scrum">
-                    </div>
-
-                </div>
-
-
-
-                <div class="border-t-2 border-neutral-100 text-base px-6 py-3">
-                    2 days ago
-                </div>
-            </div>
-
-            <div id="Frontend"
-                class="block rounded-lg text-xl font-medium bg-white text-center shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] w-full h-fit mb-6">
-                <div class="border-b-2 border-neutral-100 bg-gray-300 px-6 py-3">
-                    Data Analysis
-                </div>
-                <div class="p-6">
-                    <!-- <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                        Special title treatment
-                    </h5> -->
-                    <p class="text-start text-base text-neutral-600 mb-4">
-                        Tools I use on my day-to-day work at <span class="text-base text-neutral-800">UBATIC</span>, a
-                        laboratory which depends on UBA Medicine School.
-                    </p>
-
-                    <div class="flex items-center md:mr-3">
-                        <img id="pythonImg" data-tooltip-target="tooltip-python"
-                            class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/python.svg" alt="python">
-                        <div id="tooltip-python" role="tooltip"
-                            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
-                            Python
-                            <div class="tooltip-arrow" data-popper-arrow></div>
-                        </div>
-                        <div class="w-full">
-                            <div class="flex justify-between mb-1">
-                                <span class="text-base font-medium text-black">Jr</span>
-                                <span class="text-sm font-medium text-black">S-Sr</span>
-                            </div>
-                            <div class="bg-blue-600 bg-opacity-25 rounded-full h-2.5 mb-4">
-                                <div class="bg-yellow-300 h-2.5 rounded-full" style="width: 45%"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center md:mr-3">
-                        <img id="sqlImg" data-tooltip-target="tooltip-sql"
-                            class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/sql.svg" alt="sql">
-                        <div id="tooltip-sql" role="tooltip"
-                            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
-                            SQL
-                            <div class="tooltip-arrow" data-popper-arrow></div>
-                        </div>
-                        <div class="w-full">
-                            <div class="flex justify-between mb-1">
-                                <span class="text-base font-medium text-black">Jr</span>
-                                <span class="text-sm font-medium text-black">S-Sr</span>
-                            </div>
-                            <div class="bg-gray-400 bg-opacity-25 rounded-full h-2.5 mb-4">
-                                <div class="bg-cyan-600 h-2.5 rounded-full" style="width: 45%"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center md:mr-3">
-                        <img id="gitGithubImg" data-tooltip-target="tooltip-git-github"
-                            class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/github.svg"
-                            alt="git-github">
-                        <div id="tooltip-git-github" role="tooltip"
-                            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
-                            Git / Github
-                            <div class="tooltip-arrow" data-popper-arrow></div>
-                        </div>
-                        <div class="w-full">
-                            <div class="flex justify-between mb-1">
-                                <span class="text-base font-medium text-black">Jr</span>
-                                <span class="text-sm font-medium text-black">S-Sr</span>
-                            </div>
-                            <div class="bg-gray-400 bg-opacity-25 rounded-full h-2.5 mb-4">
-                                <div class="bg-cyan-600 h-2.5 rounded-full" style="width: 45%"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h5 class="text-start mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                        Other habilities I'm looking to learn:
-                    </h5>
-
-                    <div id="dataLearn" class="flex">
-                        <img id="grafanaImg" class="w-fit h-fit mr-3" src="src/imgs/grafana.svg" alt="grafana">
-
-                        <img id="scrumImg" class="w-fit h-fit mr-3" src="src/imgs/scrum.svg" alt="scrum">
-                    </div>
-
-                </div>
-
-
-
-                <div class="border-t-2 border-neutral-100 text-base px-6 py-3">
-                    2 days ago
-                </div>
-            </div>
-
-            <div id="Databases"
-                class="block rounded-lg text-xl font-medium bg-white text-center shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] w-full h-fit mb-6">
-                <div class="border-b-2 border-neutral-100 bg-gray-300 px-6 py-3">
-                    Data Analysis
-                </div>
-                <div class="p-6">
-                    <!-- <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                        Special title treatment
-                    </h5> -->
-                    <p class="text-start text-base text-neutral-600 mb-4">
-                        Tools I use on my day-to-day work at <span class="text-base text-neutral-800">UBATIC</span>, a
-                        laboratory which depends on UBA Medicine School.
-                    </p>
-
-                    <div class="flex items-center md:mr-3">
-                        <img id="pythonImg" data-tooltip-target="tooltip-python"
-                            class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/python.svg" alt="python">
-                        <div id="tooltip-python" role="tooltip"
-                            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
-                            Python
-                            <div class="tooltip-arrow" data-popper-arrow></div>
-                        </div>
-                        <div class="w-full">
-                            <div class="flex justify-between mb-1">
-                                <span class="text-base font-medium text-black">Jr</span>
-                                <span class="text-sm font-medium text-black">S-Sr</span>
-                            </div>
-                            <div class="bg-blue-600 bg-opacity-25 rounded-full h-2.5 mb-4">
-                                <div class="bg-yellow-300 h-2.5 rounded-full" style="width: 45%"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center md:mr-3">
-                        <img id="sqlImg" data-tooltip-target="tooltip-sql"
-                            class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/sql.svg" alt="sql">
-                        <div id="tooltip-sql" role="tooltip"
-                            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
-                            SQL
-                            <div class="tooltip-arrow" data-popper-arrow></div>
-                        </div>
-                        <div class="w-full">
-                            <div class="flex justify-between mb-1">
-                                <span class="text-base font-medium text-black">Jr</span>
-                                <span class="text-sm font-medium text-black">S-Sr</span>
-                            </div>
-                            <div class="bg-gray-400 bg-opacity-25 rounded-full h-2.5 mb-4">
-                                <div class="bg-cyan-600 h-2.5 rounded-full" style="width: 45%"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center md:mr-3">
-                        <img id="gitGithubImg" data-tooltip-target="tooltip-git-github"
-                            class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/github.svg"
-                            alt="git-github">
-                        <div id="tooltip-git-github" role="tooltip"
-                            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
-                            Git / Github
-                            <div class="tooltip-arrow" data-popper-arrow></div>
-                        </div>
-                        <div class="w-full">
-                            <div class="flex justify-between mb-1">
-                                <span class="text-base font-medium text-black">Jr</span>
-                                <span class="text-sm font-medium text-black">S-Sr</span>
-                            </div>
-                            <div class="bg-gray-400 bg-opacity-25 rounded-full h-2.5 mb-4">
-                                <div class="bg-cyan-600 h-2.5 rounded-full" style="width: 45%"></div>
                             </div>
                         </div>
                     </div>
