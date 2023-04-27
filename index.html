@@ -372,169 +372,178 @@
         </section>
 
         <section id="Skills" class="container mt-5 w-full h-full mx-auto mb-10 bg-black bg-opacity-25">
+            <h1 class="text-5xl text-white text-center mb-12">Skillset</h1>
 
-            <h1 class="text-4xl text-white">Skillset:</h1>
-
-            <!-- card that flips on hover -->
-            <div class="group h-96 w-80 [perspective:1000px] select-none">
-                <div
-                    class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                    <div class="absolute inset-0">
-                        <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40 rotate-180"
-                            src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80"
-                            alt="" />
-                        <header>
-                            <h4
-                                class="absolute top-0 left-0 rounded-full rounded-l-none bg-gray-300 bg-opacity-75 italic px-1 text-2xl text-gray-800 font-bold tracking-wide group-hover:hidden">
-                                Data Analysis
-                            </h4>
-                        </header>
-                        <footer>
-                            <h5
-                                class="absolute bottom-0.5 right-0.5 rounded-full bg-white bg-opacity-50 py-2 px-1 text-center text-sm text-gray-800 font-bold leading-none group-hover:hidden">
-                                Hover <br> Me!
-                            </h5>
-                        </footer>
-                    </div>
+            <div class="lg:grid lg:grid-cols-3">
+                <!-- Data Analysis card -->
+                <div class="group h-96 w-80 [perspective:1000px] select-none mb-12 mx-auto lg:mb-0">
                     <div
-                        class="absolute top-0 h-full w-full rounded-xl bg-black/80 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                        <div class="flex h-fit flex-col items-center mt-2">
-                            <h1 class="text-3xl font-bold">Data Analyst</h1>
-                            <p class="text-lg">Member of UBATIC Project</p>
-                            <p class="text-base font-bold mt-6">Experience</p>
+                        class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0">
+                            <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40 rotate-180"
+                                src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80"
+                                alt="" />
+                            <header>
+                                <h4
+                                    class="absolute top-0 left-0 rounded-full rounded-l-none bg-gray-300 bg-opacity-75 italic px-1 text-2xl text-gray-800 font-bold tracking-wide group-hover:hidden">
+                                    Data Analysis
+                                </h4>
+                            </header>
+                            <footer>
+                                <h5
+                                    class="absolute bottom-0.5 right-0.5 rounded-full bg-white bg-opacity-50 py-2 px-1 text-center text-sm text-gray-800 font-bold leading-none group-hover:hidden">
+                                    Hover <br> Me!
+                                </h5>
+                            </footer>
                         </div>
-                        <div class="w-full grid grid-cols-2 gap-2 mx-auto text-sm text-center mt-2 mb-6">
-                            <p>Exploratory Analysis</p>
-                            <p>Data Cleaning</p>
-                            <p>Data Visualization</p>
-                            <p>Machine Learning</p>
-                        </div>
-                        <div class="w-full grid grid-cols-2 place-items-center mt-6">
-                            <div class="flex items-center mb-4">
-                                <img id="pythonImg" class="w-10 h-10 mr-3" src="src/imgs/python.svg" alt="python">
-                                <p>Python</p>
+                        <div
+                            class="absolute top-0 h-full w-full rounded-xl bg-black/80 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                            <div class="flex h-fit flex-col items-center mt-2">
+                                <h1 class="text-3xl font-bold">Data Analyst</h1>
+                                <p class="text-lg">Member of UBATIC Project</p>
+                                <p class="text-base font-bold mt-6">Experience</p>
                             </div>
-                            <div class="flex items-center mb-4">
-                                <img id="sqLiteImg" class="w-10 h-10 mr-3" src="src/imgs/sqlite.png" alt="sqlite">
-                                <p>SQLite</p>
+                            <div class="w-full grid grid-cols-2 gap-2 mx-auto text-sm text-center mt-2 mb-6">
+                                <p>Exploratory Analysis</p>
+                                <p>Data Cleaning</p>
+                                <p>Data Visualization</p>
+                                <p>Machine Learning</p>
                             </div>
-                        </div>
-                        <div class="mt-12">
-                            <p class="">Looking to learn:</p>
-                            <div class="grid grid-cols-2 place-items-center mt-2">
+                            <div class="w-full grid grid-cols-2 place-items-center mt-6">
                                 <div class="flex items-center mb-4">
-                                    <img id="grafanaImg" class="w-10 h-10 mr-3" src="src/imgs/grafana.svg"
-                                        alt="grafana">
-                                    <p>Grafana</p>
+                                    <img id="pythonImg" class="w-10 h-10 mr-3" src="src/imgs/python.svg" alt="python">
+                                    <p>Python</p>
                                 </div>
                                 <div class="flex items-center mb-4">
-                                    <img id="powerBiImg" class="w-10 h-10 mr-3" src="src/imgs/power bi.svg"
-                                        alt="powerBi">
-                                    <p>Power BI</p>
+                                    <img id="sqLiteImg" class="w-10 h-10 mr-3" src="src/imgs/sqlite.png" alt="sqlite">
+                                    <p>SQLite</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div id="Backend"
-                class="block rounded-lg text-xl font-medium bg-white text-center shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] w-full h-fit mb-6 mt-96">
-                <div class="border-b-2 border-neutral-100 bg-gray-300 px-6 py-3">
-                    Back-End
-                </div>
-                <div class="p-6">
-                    <p class="text-start text-base text-neutral-600 mb-4">
-                        Technologies used on my back-end development projects
-                    </p>
-
-                    <div class="md:grid md:grid-cols-2 md:gap-6 mt-10">
-
-                        <div id="rubyBar" class="flex items-center md:mr-3">
-                            <img id="rubyImg" data-tooltip-target="tooltip-ruby"
-                                class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/ruby.svg" alt="ruby">
-                            <div id="tooltip-ruby" role="tooltip"
-                                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                                Ruby
-                                <div class="tooltip-arrow" data-popper-arrow></div>
-                            </div>
-                            <div class="w-full">
-                                <div class="flex justify-between mb-1">
-                                    <span class="text-base font-medium text-black dark:text-black">Jr</span>
-                                    <span class="text-sm font-medium text-black dark:text-black">S-Sr</span>
-                                </div>
-                                <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-red-600 h-2.5 rounded-full dark:bg-red-500" style="width: 45%"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="rorBar" class="flex items-center">
-                            <img id="rorImg" data-tooltip-target="tooltip-ror"
-                                class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/rubyonrails.svg"
-                                alt="ruby on rails">
-                            <div id="tooltip-ror" role="tooltip"
-                                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                                Ruby On Rails
-                                <div class="tooltip-arrow" data-popper-arrow></div>
-                            </div>
-                            <div class="w-full">
-                                <div class="flex justify-between mb-1">
-                                    <span class="text-base font-medium text-black dark:text-black">Jr</span>
-                                    <span class="text-sm font-medium text-black dark:text-black">S-Sr</span>
-                                </div>
-                                <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-red-600 h-2.5 rounded-full dark:bg-red-500" style="width: 45%">
+                            <div class="mt-12">
+                                <p class="">Looking to learn:</p>
+                                <div class="grid grid-cols-2 place-items-center mt-2">
+                                    <div class="flex items-center mb-4">
+                                        <img id="grafanaImg" class="w-10 h-10 mr-3" src="src/imgs/grafana.svg"
+                                            alt="grafana">
+                                        <p>Grafana</p>
+                                    </div>
+                                    <div class="flex items-center mb-4">
+                                        <img id="powerBiImg" class="w-10 h-10 mr-3" src="src/imgs/power bi.svg"
+                                            alt="powerBi">
+                                        <p>Power BI</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
 
-                        <div id="jsBar" class="flex items-center md:mr-3">
-                            <img id="javascriptImg" data-tooltip-target="tooltip-javascript"
-                                class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/javascript.svg"
-                                alt="javascript">
-                            <div id="tooltip-javascript" role="tooltip"
-                                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                                Javascript
-                                <div class="tooltip-arrow" data-popper-arrow></div>
-                            </div>
-                            <div class="w-full">
-                                <div class="flex justify-between mb-1">
-                                    <span class="text-base font-medium text-black dark:text-black">Jr</span>
-                                    <span class="text-sm font-medium text-black dark:text-black">S-Sr</span>
-                                </div>
-                                <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-yellow-400 h-2.5 rounded-full" style="width: 45%"></div>
-                                </div>
-                            </div>
+                <!-- Back-end Card -->
+                <div class="group h-96 w-80 [perspective:1000px] select-none mb-12 mx-auto lg:mb-0">
+                    <div
+                        class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0">
+                            <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40"
+                                src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
+                                alt="" />
+                            <header>
+                                <h4
+                                    class="absolute top-0 left-0 rounded-full rounded-l-none bg-gray-300 bg-opacity-75 italic px-1 text-2xl text-gray-800 font-bold tracking-wide group-hover:hidden">
+                                    Back-End
+                                </h4>
+                            </header>
+                            <footer>
+                                <h5
+                                    class="absolute bottom-0.5 right-0.5 rounded-full bg-white bg-opacity-50 py-2 px-1 text-center text-sm text-gray-800 font-bold leading-none group-hover:hidden">
+                                    Hover <br> Me!
+                                </h5>
+                            </footer>
                         </div>
-
-                        <div id="nodeBar" class="flex items-center">
-                            <img id="nodejsImg" data-tooltip-target="tooltip-nodejs"
-                                class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/nodejs.svg"
-                                alt="nodejs">
-                            <div id="tooltip-nodejs" role="tooltip"
-                                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                                Node.js
-                                <div class="tooltip-arrow" data-popper-arrow></div>
-                            </div>
-                            <div class="w-full">
-                                <div class="flex justify-between mb-1">
-                                    <span class="text-base font-medium text-black dark:text-black">Jr</span>
-                                    <span class="text-sm font-medium text-black dark:text-black">S-Sr</span>
+                        <div
+                            class="absolute inset-0 h-full w-full rounded-xl bg-black/80 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                            <div class="h-fit block align-middle mt-14">
+                                <h1 class="text-3xl font-bold">Experience</h1>
+                                <div class="w-full grid grid-cols-2 gap-y-6 text-start mt-6 ml-2">
+                                    <div class="flex items-center">
+                                        <img id="rubyImg" class="w-10 h-10 mr-3" src="src/imgs/ruby.svg" alt="ruby">
+                                        <p>Ruby</p>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <img id="rorImg" class="w-10 h-10 mr-3" src="src/imgs/rubyonrails.svg"
+                                            alt="rubyOnRails">
+                                        <p>Ruby On Rails</p>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <img id="javascriptImg" class="w-10 h-10 mr-3" src="src/imgs/javascript.svg"
+                                            alt="javascript">
+                                        <p>Javascript</p>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <img id="nodeImg" class="w-10 h-10 mr-3" src="src/imgs/nodejs.svg" alt="nodejs">
+                                        <p>Nodejs</p>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <img id="postgreImg" class="w-10 h-10 mr-3" src="src/imgs/postgresql.svg"
+                                            alt="postgresql">
+                                        <p>PostgreSQL</p>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <img id="mongoDbImg" class="w-10 h-10 mr-3" src="src/imgs/mongodb.svg"
+                                            alt="mongodb">
+                                        <p>MongoDB</p>
+                                    </div>
                                 </div>
-                                <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-green-400 h-2.5 rounded-full" style="width: 45%"></div>
+                                <div class="flex justify-center mt-8">
+                                    <img id="dockerImg" class="w-10 h-10 mr-3" src="src/imgs/docker.png" alt="docker">
+                                    <p>Docker</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="border-t-2 border-neutral-100 text-base px-6 py-3">
-                    2 days ago
+                <!-- Front-end Card -->
+                <div class="group h-96 w-80 [perspective:1000px] select-none mb-12 mx-auto lg:mb-0">
+                    <div
+                        class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0">
+                            <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40"
+                                src="https://images.unsplash.com/photo-1577760258779-e787a1733016?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                alt="" />
+                            <header>
+                                <h4
+                                    class="absolute top-0 left-0 rounded-full rounded-l-none bg-gray-300 bg-opacity-75 italic px-1 text-2xl text-gray-800 font-bold tracking-wide group-hover:hidden">
+                                    Front-end
+                                </h4>
+                            </header>
+                            <footer>
+                                <h5
+                                    class="absolute bottom-0.5 right-0.5 rounded-full bg-white bg-opacity-50 py-2 px-1 text-center text-sm text-gray-800 font-bold leading-none group-hover:hidden">
+                                    Hover <br> Me!
+                                </h5>
+                            </footer>
+                        </div>
+                        <div
+                            class="absolute top-0 h-full w-full rounded-xl bg-black/80 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                            <div class="flex h-fit flex-col items-center mt-10">
+                                <h1 class="text-3xl font-bold mb-12">Experience</h1>
+                                <div class="flex items-center mb-12">
+                                    <img id="rubyImg" class="w-10 h-10 mr-3" src="src/imgs/css.svg" alt="ruby">
+                                    <p>CSS</p>
+                                </div>
+                                <div class="flex items-center mb-12">
+                                    <img id="bootstrapImg" class="w-10 h-10 mr-3" src="src/imgs/bootstrap.svg"
+                                        alt="bootstrap">
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div class="flex items-center mb-12">
+                                    <img id="tailwindcssImg" class="w-10 h-10 mr-3" src="src/imgs/tailwind.svg"
+                                        alt="tailwindcss">
+                                    <p>TailwindCSS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -542,255 +551,6 @@
 
 
     <div id="middleContainer">
-
-        <section id="Skills" class="py-12">
-            <div class="flex">
-                <header class="mb-12 mx-auto">
-                    <h1 class="text-6xl ">My Skills</h1>
-                </header>
-            </div>
-            <div id="skills-table" class="ml-2">
-
-                <div id="Development" class="mb-12">
-                    <div class="md:grid md:grid-cols-2">
-                        <div id="backEnd" class="mt-10">
-
-                            <h3 class="text-2xl">Back-end:</h3>
-
-                            <div class="md:grid md:grid-cols-2 md:gap-6 mt-10">
-
-                                <div id="rubyBar" class="flex items-center md:mr-3">
-                                    <img id="rubyImg" data-tooltip-target="tooltip-ruby"
-                                        class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/ruby.svg"
-                                        alt="ruby">
-                                    <div id="tooltip-ruby" role="tooltip"
-                                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                                        Ruby
-                                        <div class="tooltip-arrow" data-popper-arrow></div>
-                                    </div>
-                                    <div class="w-full">
-                                        <div class="flex justify-between mb-1">
-                                            <span class="text-base font-medium text-black dark:text-black">Jr</span>
-                                            <span class="text-sm font-medium text-black dark:text-black">S-Sr</span>
-                                        </div>
-                                        <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                            <div class="bg-red-600 h-2.5 rounded-full dark:bg-red-500"
-                                                style="width: 45%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div id="rorBar" class="flex items-center">
-                                    <img id="rorImg" data-tooltip-target="tooltip-ror"
-                                        class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md"
-                                        src="src/imgs/rubyonrails.svg" alt="ruby on rails">
-                                    <div id="tooltip-ror" role="tooltip"
-                                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                                        Ruby On Rails
-                                        <div class="tooltip-arrow" data-popper-arrow></div>
-                                    </div>
-                                    <div class="w-full">
-                                        <div class="flex justify-between mb-1">
-                                            <span class="text-base font-medium text-black dark:text-black">Jr</span>
-                                            <span class="text-sm font-medium text-black dark:text-black">S-Sr</span>
-                                        </div>
-                                        <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                            <div class="bg-red-600 h-2.5 rounded-full dark:bg-red-500"
-                                                style="width: 45%">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div id="jsBar" class="flex items-center md:mr-3">
-                                    <img id="javascriptImg" data-tooltip-target="tooltip-javascript"
-                                        class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md"
-                                        src="src/imgs/javascript.svg" alt="javascript">
-                                    <div id="tooltip-javascript" role="tooltip"
-                                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                                        Javascript
-                                        <div class="tooltip-arrow" data-popper-arrow></div>
-                                    </div>
-                                    <div class="w-full">
-                                        <div class="flex justify-between mb-1">
-                                            <span class="text-base font-medium text-black dark:text-black">Jr</span>
-                                            <span class="text-sm font-medium text-black dark:text-black">S-Sr</span>
-                                        </div>
-                                        <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                            <div class="bg-yellow-400 h-2.5 rounded-full" style="width: 45%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div id="nodeBar" class="flex items-center">
-                                    <img id="nodejsImg" data-tooltip-target="tooltip-nodejs"
-                                        class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/nodejs.svg"
-                                        alt="nodejs">
-                                    <div id="tooltip-nodejs" role="tooltip"
-                                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                                        Node.js
-                                        <div class="tooltip-arrow" data-popper-arrow></div>
-                                    </div>
-                                    <div class="w-full">
-                                        <div class="flex justify-between mb-1">
-                                            <span class="text-base font-medium text-black dark:text-black">Jr</span>
-                                            <span class="text-sm font-medium text-black dark:text-black">S-Sr</span>
-                                        </div>
-                                        <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                            <div class="bg-green-400 h-2.5 rounded-full" style="width: 45%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="frontEnd" class="ml-6 mt-10">
-                            <h3 class="text-2xl">Front-end:</h3>
-                            <div class="lg:grid lg:grid-cols-2 mt-10">
-
-                                <div class="flex items-center w-4/5 md:mx-auto">
-                                    <img id="bootstrapImg" data-tooltip-target="tooltip-bootstrap"
-                                        class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/bootstrap.svg"
-                                        alt="bootstrap">
-                                    <div id="tooltip-bootstrap" role="tooltip"
-                                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                                        Bootstrap
-                                        <div class="tooltip-arrow" data-popper-arrow></div>
-                                    </div>
-                                    <div class="w-full">
-                                        <div class="flex justify-between mb-1">
-                                            <span class="text-base font-medium text-black dark:text-black">Jr</span>
-                                            <span class="text-sm font-medium text-black dark:text-black">S-Sr</span>
-                                        </div>
-                                        <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                            <div class="bg-purple-600 h-2.5 rounded-full dark:bg-red-500"
-                                                style="width: 45%">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-center w-4/5 md:mx-auto">
-                                    <img id="tailwindImg" data-tooltip-target="tooltip-tailwind"
-                                        class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/tailwind.svg"
-                                        alt="tailwind css">
-                                    <div id="tooltip-tailwind" role="tooltip"
-                                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                                        Tailwind
-                                        <div class="tooltip-arrow" data-popper-arrow></div>
-                                    </div>
-                                    <div class="w-full">
-                                        <div class="flex justify-between mb-1">
-                                            <span class="text-base font-medium text-black dark:text-black">Jr</span>
-                                            <span class="text-sm font-medium text-black dark:text-black">S-Sr</span>
-                                        </div>
-                                        <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                            <div class="bg-cyan-400 h-2.5 rounded-full" style="width: 45%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="databases" class="mb-12">
-                    <h2 class="text-3xl">Databases</h2>
-                    <div class="md:grid md:grid-cols-2">
-                        <div class="md:grid md:grid-cols-2 mt-10">
-
-                            <div class="flex items-center w-4/5 md:mx-auto">
-                                <img id="sqliteImg" data-tooltip-target="tooltip-sqlite"
-                                    class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/sqlite.svg"
-                                    alt="SQLite">
-                                <div id="tooltip-sqlite" role="tooltip"
-                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                                    SQLite
-                                    <div class="tooltip-arrow" data-popper-arrow></div>
-                                </div>
-                                <div class="w-full">
-                                    <div class="flex justify-between mb-1">
-                                        <span class="text-base font-medium text-black dark:text-black">Jr</span>
-                                        <span class="text-sm font-medium text-black dark:text-black">S-Sr</span>
-                                    </div>
-                                    <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                        <div class="bg-blue-600 h-2.5 rounded-full dark:bg-red-500" style="width: 45%">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="flex items-center w-4/5 md:mx-auto">
-                                <img id="postgresqlImg" data-tooltip-target="tooltip-postgresql"
-                                    class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/postgresql.svg"
-                                    alt="PostgreSQL">
-                                <div id="tooltip-postgresql" role="tooltip"
-                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                                    PostgreSQL
-                                    <div class="tooltip-arrow" data-popper-arrow></div>
-                                </div>
-                                <div class="w-full">
-                                    <div class="flex justify-between mb-1">
-                                        <span class="text-base font-medium text-black dark:text-black">Jr</span>
-                                        <span class="text-sm font-medium text-black dark:text-black">S-Sr</span>
-                                    </div>
-                                    <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                        <div class="bg-blue-400 h-2.5 rounded-full" style="width: 45%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="flex items-center w-4/5 md:mx-auto">
-                                <img id="mongodbImg" data-tooltip-target="tooltip-mongodb"
-                                    class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/mongodb.svg"
-                                    alt="mongodb">
-                                <div id="tooltip-mongodb" role="tooltip"
-                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                                    MongoDB
-                                    <div class="tooltip-arrow" data-popper-arrow></div>
-                                </div>
-                                <div class="w-full">
-                                    <div class="flex justify-between mb-1">
-                                        <span class="text-base font-medium text-black dark:text-black">Jr</span>
-                                        <span class="text-sm font-medium text-black dark:text-black">S-Sr</span>
-                                    </div>
-                                    <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                        <div class="bg-green-600 h-2.5 rounded-full dark:bg-red-500" style="width: 45%">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="others" class="mb-12">
-                        <h2 class="text-3xl">Others</h2>
-                        <div class="flex items-center w-1/4">
-                            <img id="dockerImg" data-tooltip-target="tooltip-docker"
-                                class="w-10 h-10 mr-3 hover:bg-gray-300 rounded-md" src="src/imgs/docker.svg"
-                                alt="docker">
-                            <div id="tooltip-docker" role="tooltip"
-                                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                                Docker
-                                <div class="tooltip-arrow" data-popper-arrow></div>
-                            </div>
-                            <div class="w-full">
-                                <div class="flex justify-between mb-1">
-                                    <span class="text-base font-medium text-black dark:text-black">Jr</span>
-                                    <span class="text-sm font-medium text-black dark:text-black">S-Sr</span>
-                                </div>
-                                <div class="bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-blue-600 h-2.5 rounded-full dark:bg-red-500" style="width: 45%">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
 
         <section id="Projects" class="container my-5">
 
