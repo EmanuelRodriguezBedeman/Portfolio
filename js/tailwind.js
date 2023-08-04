@@ -15,7 +15,27 @@ tailwind.config = {
                     "800": "#1e40af",
                     "900": "#1e3a8a"
                 }
+            },
+            fontFamily: {
+                'custom-serif': [
+                    'Merriweather',
+                    'ui-sans-serif',
+                    'system-ui',
+                    '-apple-system',
+                    'system-ui',
+                    'Segoe UI',
+                    'Roboto',
+                    'Helvetica Neue',
+                    'Arial',
+                    'Noto Sans',
+                    'sans-serif',
+                    'Apple Color Emoji',
+                    'Segoe UI Emoji',
+                    'Segoe UI Symbol',
+                    'Noto Color Emoji'
+                ]
             }
-        }
+        },
+
     }
 }
