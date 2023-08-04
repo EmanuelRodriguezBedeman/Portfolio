@@ -76,15 +76,15 @@
     <div id="heroContainer"
         class="w-full bg-no-repeat bg-cover bg-center bg-blend-multiply bg-sky-600 dark:bg-blue-900 overflow-hidden bg-[url('https://images.unsplash.com/photo-1457305237443-44c3d5a30b89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80')]">
 
-        <section id="Hero" class="flex h-screen text-center">
-            <div class="dark:bg-slate-900 dark:bg-opacity-25 m-auto text-white">
-                <h1 class="text-5xl font-semibold tracking-tight leading-none">
+        <section id="Hero" class="flex h-screen">
+            <div class="hidden bg-white dark:bg-slate-900 dark:bg-opacity-25 my-auto text-black text-start">
+                <h1 class="text-blue-900 text-5xl font-semibold tracking-tight leading-none">
                     Emanuel Rodriguez Bedeman
                 </h1>
                 <p class="text-lg italic mt-5 mb-12 lg:my-20">
                     Developer and Medicine Student
                 </p>
-                <p class="text-base text-gray-300 mx-1">
+                <p class="text-base text-gray-600 mx-1">
                     "From Medicine School to Software Development, bringing new solutions and improving people's life
                     though technology."
                 </p>
@@ -279,7 +279,7 @@
     </div>
 
     <!-- Skills Container -->
-    <div id="skillsContainer" class="bg-gray-200 bg-opacity-[.60]">
+    <div id="skillsContainer" class="bg-gray-200 bg-opacity-[.60] py-20">
         <section id="Skills" class="container mt-5 w-full h-full mx-auto mb-10">
             <!-- Skills section title -->
             <div class="text-center">
@@ -288,11 +288,12 @@
                 <p class="text-xl text-black/50">Technologies I have experience on:</p>
             </div>
 
-            <div id="skillCards">
+            <!-- Skill Cards -->
+            <div class="lg:grid lg:grid-cols-3">
                 <!-- Analytics Card -->
                 <div id="analyticsCard"
-                    class="group relative max-w-md cursor-pointer rounded-lg overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:px-10 m-5">
-                    <!-- Growing blue on hover -->
+                    class="group relative max-w-md cursor-pointer rounded-lg overflow-hidden bg-white px-10 pt-10 pb-6 lg:px-2 xl:px-10 mx-auto my-5 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
+                    <!-- Blue circle growing blue on hover -->
                     <span
                         class="absolute top-10 z-0 h-20 w-20 rounded-full bg-blue-600 transition-all duration-300 group-hover:scale-[10]"></span>
                     <!-- Card content -->
@@ -377,7 +378,7 @@
 
                 <!-- Backend Card -->
                 <div id="backendCard"
-                    class="group relative max-w-md cursor-pointer rounded-lg overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:rounded-lg sm:px-10 m-5">
+                    class="group relative max-w-md cursor-pointer rounded-lg overflow-hidden bg-white px-10 pt-10 pb-6 lg:px-2 xl:px-10 mx-auto my-5 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
                     <!-- Growing blue on hover -->
                     <span
                         class="absolute top-10 z-0 h-20 w-20 rounded-full bg-blue-600 transition-all duration-300 group-hover:scale-[10]"></span>
@@ -497,7 +498,7 @@
 
                 <!-- Frontend Card -->
                 <div id="frontendCard"
-                    class="group relative max-w-md cursor-pointer rounded-lg overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:rounded-lg sm:px-10 m-5">
+                    class="group relative max-w-md cursor-pointer rounded-lg overflow-hidden bg-white px-10 pt-10 pb-6 lg:px-2 xl:px-10 mx-auto my-5 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
                     <!-- Growing blue on hover -->
                     <span
                         class="absolute top-10 z-0 h-20 w-20 rounded-full bg-blue-600 transition-all duration-300 group-hover:scale-[10]"></span>
@@ -1225,7 +1226,7 @@
                 <p class="text-xl text-black/50">Send me your idea or job proposal </p>
             </div>
             <!-- Contact Form & Blocks -->
-            <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+            <div class="max-w-[85rem] px-4 pt-10 sm:px-6 lg:px-8 lg:pt-0 mx-auto">
                 <!-- Contact Form -->
                 <div class="mt-12 max-w-lg mx-auto">
                     <!-- Card -->
