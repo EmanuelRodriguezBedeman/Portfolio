@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="path/to/font/css/file.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/tailwind.js"></script>
+
 </head>
 
 <body class="font-custom-serif">
@@ -1246,55 +1247,65 @@
                         class="flex flex-col border border-gray-300/50 rounded-2xl shadow-2xl p-4 sm:p-6 lg:p-8 dark:border-gray-700 bg-white dark:bg-gray-200">
                         <form action="https://formsubmit.co/emanuel.rodriguez.bedeman@gmail.com" method="POST">
                             <div class="grid gap-4 lg:gap-6">
-                                <!-- Grid -->
+                                <!-- Name & Lastname -->
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
                                     <!-- Name -->
                                     <div>
                                         <label for="first-name"
-                                            class="block text-sm text-gray-700 font-medium dark:text-white">First
+                                            class="block text-md text-gray-700 font-medium dark:text-white">First
                                             Name</label>
                                         <input type="text" name="First Name" id="first-name"
-                                            class="py-3 px-4 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                                            class="py-3 px-4 block w-full border-gray-200 shadow-sm rounded-md text-md focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
                                             placeholder="Emanuel" required>
                                     </div>
 
                                     <!-- Last name -->
                                     <div>
                                         <label for="last-name"
-                                            class="block text-sm text-gray-700 font-medium dark:text-white">Last
+                                            class="block text-md text-gray-700 font-medium dark:text-white">Last
                                             Name</label>
                                         <input type="text" name="Last Name" id="last-name"
-                                            class="py-3 px-4 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                                            class="py-3 px-4 block w-full border-gray-200 shadow-sm rounded-md text-md focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
                                             placeholder="Rodriguez Bedeman" required>
                                     </div>
                                 </div>
-                                <!-- End Grid -->
 
                                 <!-- Email -->
                                 <div>
                                     <label for="email"
-                                        class="block text-sm text-gray-700 font-medium dark:text-white">Email</label>
+                                        class="block text-md text-gray-700 font-medium dark:text-white">Email</label>
                                     <input type="email" name="Email" id="email" autocomplete="email"
-                                        class="py-3 px-4 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                                        class="py-3 px-4 block w-full border-gray-200 shadow-sm rounded-md text-md focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
                                         placeholder="email@mail.com" required>
                                 </div>
 
                                 <!-- Details -->
                                 <div>
                                     <label for="message"
-                                        class="block text-sm text-gray-700 font-medium dark:text-white">Details</label>
+                                        class="block text-md text-gray-700 font-medium dark:text-white">Details</label>
                                     <textarea id="message" name="Message" rows="4"
-                                        class="py-3 px-4 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                                        class="py-3 px-4 block w-full border-gray-200 shadow-sm rounded-md text-md focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
                                         placeholder="Your Message" required></textarea>
                                 </div>
                             </div>
-                            <!-- End Grid -->
 
                             <!-- Button -->
                             <div class="mt-6 grid">
-                                <button type="submit"
-                                    class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800">Send
-                                    message</button>
+                                <button id="messageButton" type="submit"
+                                    class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-md lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800">
+                                    <div id="buttonActive" class="hidden flex">
+                                        <svg class="w-5 h-5 mr-3 -ml-1 text-white animate-spin"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
+                                                stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor"
+                                                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                                            </path>
+                                        </svg>
+                                        <p>Sending message...</p>
+                                    </div>
+                                    <p id="buttonLabel" class="">Send message</p>
+                                </button>
                             </div>
 
                             <!-- Submit form options -->
@@ -1324,7 +1335,7 @@
                 </div>
 
                 <!-- Blocks -->
-                <div class="mt-12 grid sm:grid-cols-2 items-center gap-4 lg:gap-8">
+                <div class="mt-12 grid sm:grid-cols-2 items-center gap-4 lg:gap-8 mb-4">
                     <!-- Linkedin Block -->
                     <a class="relative flex flex-col h-full text-center rounded-md hover:bg-gray-200 p-4 sm:p-6 dark:hover:bg-white/[.05] group"
                         href="https://www.linkedin.com/in/emanuel-rodriguez-bedeman/" dir="ltr">
@@ -1426,6 +1437,7 @@
         </section>
     </div>
 
+    <script src="js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 </body>
 
