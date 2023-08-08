@@ -13,9 +13,6 @@ function changeLabel() {
 // Get the screen height of the device
 const screenHeight = window.screen.height;
 
-// Get the screen wdith of the device
-const screenWidth = window.screen.width;
-
 // Get the ERB Logo
 const erbLogo = document.getElementById("erbLogo");
 
