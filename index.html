@@ -1485,12 +1485,12 @@
                 </div>
 
                 <!-- Contact links -->
-                <div class="mt-6 lg:mt-0 grid grid-cols-2 items-center gap-5 lg:gap-8 lg:grid-cols-1 mb-0">
+                <div class="grid grid-cols-2 items-center gap-5 lg:gap-0 lg:grid-cols-1 mt-6 lg:mt-0 mb-5 lg:mb-0">
                     <!-- Linkedin Contact -->
-                    <a class="relative flex flex-col h-full text-center lg:text-start rounded-2xl hover:bg-blue-50/50 p-4 sm:p-6 group bg-blue-50/25 lg:flex-row lg:items-center"
+                    <a class="relative flex flex-col h-full lg:h-fit text-center lg:text-start rounded-2xl p-4 sm:p-6 group bg-white shadow-md lg:flex-row lg:items-center"
                         href="https://www.linkedin.com/in/emanuel-rodriguez-bedeman/" dir="ltr">
                         <!-- Linkedin Icon -->
-                        <svg class="w-9 h-9 text-gray-800 mx-auto group-hover:text-blue-600 transition ease-in-out group-hover:-translate-y-1 lg:group-hover:-translate-y-0 lg:group-hover:-translate-x-1 lg:me-5"
+                        <svg class="w-9 h-9 text-gray-800 mx-auto group-hover:text-blue-600 transition ease-in-out group-hover:-translate-y-1 lg:group-hover:-translate-y-0 lg:group-hover:-translate-x-0.5 lg:me-5"
                             enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0"
                             viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1512,7 +1512,7 @@
                             <h3
                                 class="text-lg font-semibold text-gray-800 mt-2 lg:mt-0 group-hover:text-blue-700 lg:flex lg:items-center">
                                 Linkedin
-                                <svg class="hidden lg:block w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1 ms-2"
+                                <svg class="hidden lg:block w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1 ms-1"
                                     width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1536,7 +1536,7 @@
                             </p>
                         </div>
                         <!-- Plus Icons on hover -->
-                        <svg class="hidden group-hover:block absolute h-14 w-14 top-3 -end-2 text-blue-700/75"
+                        <svg class="hidden group-hover:block absolute h-14 w-14 top-3 -end-2 text-blue-700/75 lg:group-hover:hidden"
                             width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
                             <g fill="none" fill-rule="evenodd">
                                 <g fill="currentColor">
@@ -1548,10 +1548,10 @@
                     </a>
 
                     <!-- Github Contact -->
-                    <a class="relative flex flex-col h-full text-center lg:text-start rounded-2xl hover:bg-blue-50/50 p-4 sm:p-6 group bg-blue-50/25 lg:flex-row"
+                    <a class="relative flex flex-col h-full lg:h-fit text-center lg:text-start rounded-2xl p-4 sm:p-6 group bg-white shadow-md lg:flex-row lg:items-center"
                         href="https://github.com/EmanuelRodriguezBedeman">
                         <!-- Github Icon -->
-                        <svg class="w-9 h-9 text-gray-800 mx-auto transition ease-in-out group-hover:-translate-y-1 group-hover:text-blue-700"
+                        <svg class="w-9 h-9 text-gray-800 mx-auto group-hover:text-blue-600 transition ease-in-out group-hover:-translate-y-1 lg:group-hover:-translate-y-0 lg:group-hover:-translate-x-0.5 lg:me-5"
                             aria-hidden="true" class="octicon octicon-mark-github" fill="currentColor" height="24"
                             version="1.1" viewBox="0 0 16 16" width="24">
                             <path fill-rule="evenodd"
@@ -1561,14 +1561,23 @@
                         <!-- Description -->
                         <div class="grow">
                             <!-- Title -->
-                            <h3 class="text-lg font-semibold text-gray-800 mt-2 group-hover:text-blue-700">
+                            <h3
+                                class="text-lg font-semibold text-gray-800 mt-2 lg:mt-0 group-hover:text-blue-700 lg:flex lg:items-center">
                                 Github
+                                <svg class="hidden lg:block w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1 ms-1"
+                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z"
+                                        fill="currentColor" />
+                                </svg>
                             </h3>
                             <!-- Subtitle -->
                             <p class="mt-1 text-gray-500">
                                 Check out my code & a full list of the technologies I use.
                             </p>
-                            <p class="mt-5 inline-flex items-center gap-x-2 font-medium text-blue-600">
+                            <!-- Link -->
+                            <p class="mt-5 inline-flex items-center gap-x-2 font-medium text-blue-600 lg:hidden">
                                 Go to my github
                                 <svg class="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1" width="16"
                                     height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1579,7 +1588,7 @@
                             </p>
                         </div>
                         <!-- Plus icon on hover -->
-                        <svg class="hidden group-hover:block absolute h-14 w-14 top-3 -end-2 text-blue-700/75"
+                        <svg class="hidden group-hover:block absolute h-14 w-14 top-3 -end-2 text-blue-700/75 lg:group-hover:hidden"
                             width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
                             <g fill="none" fill-rule="evenodd">
                                 <g fill="currentColor">
