@@ -423,25 +423,13 @@
                                     <div id="pythonIcon">
 
                                         <svg id="pythonSvg"
-                                            class="w-12 h-12 rounded-full p-2 group-hover:bg-blue-50 outline-none"
+                                            class="w-12 h-12 fill-zinc-700 group-hover:fill-sky-50 outline-none p-2"
                                             data-tooltip-target="tooltip-python" xmlns="http://www.w3.org/2000/svg"
                                             preserveAspectRatio="xMinYMin meet" viewBox="0 0 256 255">
-                                            <defs>
-                                                <linearGradient id="a" x1="12.959%" x2="79.639%" y1="12.039%"
-                                                    y2="78.201%">
-                                                    <stop offset="0%" stop-color="#387EB8"></stop>
-                                                    <stop offset="100%" stop-color="#366994"></stop>
-                                                </linearGradient>
-                                                <linearGradient id="b" x1="19.128%" x2="90.742%" y1="20.579%"
-                                                    y2="88.429%">
-                                                    <stop offset="0%" stop-color="#FFE052"></stop>
-                                                    <stop offset="100%" stop-color="#FFC331"></stop>
-                                                </linearGradient>
-                                            </defs>
-                                            <path fill="url(#a)"
+                                            <path
                                                 d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zM92.802 19.66a11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13 11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.13z">
                                             </path>
-                                            <path fill="url(#b)"
+                                            <path
                                                 d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897zm34.114-19.586a11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.131 11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13z">
                                             </path>
                                         </svg>
@@ -454,7 +442,7 @@
 
                                     <div id="sqlIcon">
                                         <svg id="sqlSvg"
-                                            class="w-12 h-12 fill-sky-800 rounded-full pt-2 group-hover:bg-blue-50 outline-none"
+                                            class="w-12 h-12 fill-zinc-700 group-hover:fill-blue-50 outline-none pt-2"
                                             data-tooltip-target="tooltip-sql" xmlns="http://www.w3.org/2000/svg"
                                             version="1.1" viewBox="0 0 700 700">
                                             <path
@@ -469,8 +457,9 @@
                                     </div>
 
                                     <div id="BiIcon">
-                                        <svg id="BiSvg" class="w-12 h-12 outline-none" data-tooltip-target="tooltip-bi"
-                                            xmlns="http://www.w3.org/2000/svg"
+                                        <svg id="BiSvg"
+                                            class="w-12 h-12 fill-zinc-700 group-hover:fill-blue-50 outline-none"
+                                            data-tooltip-target="tooltip-bi" xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" height="800" width="1200"
                                             viewBox="-4.83 -8.439875 41.86 50.63925">
                                             <g transform="translate(-.9 -.1405)">
@@ -483,10 +472,10 @@
                                                 </clipPath>
                                                 <path
                                                     d="M11.1 27.3c0 1.1-.9 2.1-2.1 2.1-1.2 0-2.1-.9-2.1-2.1v-9c0-1.1.9-2.1 2.1-2.1 1.2 0 2.1.9 2.1 2.1zm6 2.4c0 1.1-.9 2.1-2.1 2.1-1.2 0-2-.9-2-2.1V16c0-1.1.9-2.1 2.1-2.1 1.2 0 2.1.9 2.1 2.1v13.7zM5 25.3c0 1.1-.9 2.1-2.1 2.1-1.2 0-2.1-.9-2.1-2.1v-4.9c0-1.1.9-2.1 2.1-2.1 1.2 0 2.1 1 2.1 2.1zm18.1 6.6c0 1.1-.9 2.1-2.1 2.1-1.1 0-2-1-2-2.1V13.7c0-1.1.9-2.1 2.1-2.1 1.1 0 2.1.9 2.1 2.1v18.2z"
-                                                    fill="#231F20" clip-path="url(#b)" />
+                                                    clip-path="url(#b)" />
                                                 <path
                                                     d="M29.7 31c-.4 0-.7-.1-1.1-.2l-2.5-.8c-.4-.1-.7-.6-.5-1 .1-.4.6-.7 1-.5l2.6.8c.5.2 1.1.1 1.6-.3.5-.3.7-.9.7-1.4V10.9c0-.8-.5-1.5-1.2-1.7L5.8 1.8c-.5-.2-1.1-.1-1.6.2-.4.4-.7.9-.7 1.5V15c0 .5-.4.8-.8.8-.5 0-.8-.4-.8-.8V3.5c0-1.1.5-2.1 1.4-2.7.9-.7 2-.8 3-.5l24.4 7.4c1.4.4 2.4 1.8 2.4 3.3v16.7c0 1.1-.5 2.1-1.4 2.8-.6.2-1.3.5-2 .5"
-                                                    fill="#231F20" clip-path="url(#b)" />
+                                                    clip-path="url(#b)" />
                                             </g>
                                         </svg>
                                         <div id="tooltip-bi" role="tooltip"
