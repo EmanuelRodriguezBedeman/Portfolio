@@ -772,10 +772,9 @@
                     <div class="grid md:grid-cols-2 gap-8 lg:gap-16 xl:grid-cols-3 mx-4 lg:mx-20">
                         <!-- Portfolio Project -->
                         <a id="portfolioProject" href="#" target="_self">
-                            <div class="group relative">
+                            <div class="group">
                                 <!-- Window -->
-                                <div
-                                    class="group-hover:blur-sm group-hover:opacity-25 transition duration-300 shadow-xl rounded-t-lg border border-black/10">
+                                <div class="shadow-lg rounded-t-lg border border-black/10">
                                     <!-- Top bar -->
                                     <div
                                         class="w-full h-11 rounded-t-lg bg-gray-200 flex justify-start items-center space-x-1.5 px-3">
@@ -784,57 +783,97 @@
                                         <span class="w-3 h-3 rounded-full bg-green-400"></span>
                                     </div>
                                     <!-- Screen content -->
-                                    <div class="bg-gray-100">
+                                    <div class="relative flex items-center justify-center border">
                                         <img alt="Portfolio Image"
-                                            class="w-fit h-fit mx-auto max-h-[220px] xl:min-h-[300px]"
+                                            class="w-fit h-fit group-hover:opacity-25 group-hover:blur-sm transition duration-300 mx-auto max-h-[220px] xl:min-h-[300px]"
                                             src="src/imgs/portfolio mockup.webp">
-                                    </div>
-                                </div>
-                                <!-- Description -->
-                                <div
-                                    class="flex flex-col gap-5 xl:gap-10 place-content-center h-full w-full absolute top-0 opacity-0 group-hover:opacity-100 group-hover:bg-cyan-200/[.20] transition duration-300 rounded-t-xl px-4">
-                                    <div class="text-blue-">
-                                        <!-- Titles & Description container -->
-                                        <div>
-                                            <!-- Subtitle -->
-                                            <h2
-                                                class="text-sm title-font text-cyan-300 text-shadow font-bold tracking-widest">
-                                                LATEST
-                                            </h2>
-                                            <!-- Title -->
-                                            <h1 class="text-blue-400 text-shadow text-3xl title-font font-medium mb-4">
-                                                This
-                                                Portfolio</h1>
-                                            <!-- Description -->
-                                            <p class="text-blue-100 leading-relaxed">Simple page to present myself &
-                                                show my
-                                                work.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- Technologies -->
-                                    <div class="flex items-center">
-                                        <!-- Tailwind Icon -->
-                                        <div>
-                                            <svg class="w-12 h-12 rounded-full"
-                                                data-tooltip-target="tooltip-portfolio-tailwind"
-                                                xmlns="http://www.w3.org/2000/svg" width="1000" height="1000"
-                                                viewBox="0 0 1000 1000" fill="none">
-                                                <path
-                                                    d="M489.5 226.499C328 231.632 280 346.999 269 409.499C283.333 386.332 328.5 335.5 395 335.5C472.5 335.5 531.5 422 567.5 449C611.237 481.803 699.123 525.115 814.5 490C906.5 462 949.167 364.332 958.5 317.999C914 378.499 846.5 414.838 763 371.999C705.5 342.499 662.5 221 489.5 226.499Z"
-                                                    fill="#07B6D5" />
-                                                <path
-                                                    d="M261 500.999C99.5 506.132 51.5 621.499 40.5 683.999C54.8333 660.832 100 610 166.5 610C244 610 303 696.5 339 723.5C382.737 756.303 470.623 799.615 586 764.5C678 736.5 720.667 638.832 730 592.499C685.5 652.999 618 689.338 534.5 646.499C477 616.999 434 495.5 261 500.999Z"
-                                                    fill="#07B6D5" />
-                                            </svg>
-                                            <div id="tooltip-portfolio-tailwind" role="tooltip"
-                                                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
-                                                Tailwind
-                                                <div class="tooltip-arrow" data-popper-arrow></div>
+                                        <!-- Description -->
+                                        <div
+                                            class="h-full w-full items-center justify-center 2xl:justify-start 2xl:ms-20 absolute hidden group-hover:flex transition duration-300 rounded-t-xl">
+                                            <!-- Titles, Description & Tech -->
+                                            <div>
+                                                <!-- Subtitle -->
+                                                <h2
+                                                    class="text-sm title-font text-cyan-300 text-shadow font-bold tracking-widest">
+                                                    LATEST
+                                                </h2>
+                                                <!-- Title -->
+                                                <h1
+                                                    class="text-blue-400 text-shadow text-3xl title-font font-medium mb-4">
+                                                    This Portfolio
+                                                </h1>
+                                                <!-- Description -->
+                                                <p class="text-blue-100 leading-relaxed">
+                                                    Simple page to present myself & my work.
+                                                </p>
+                                                <!-- Tailwind Tech -->
+                                                <div class="mt-5 xl:mt-10">
+                                                    <svg class="w-12 h-12 rounded-full"
+                                                        data-tooltip-target="tooltip-portfolio-tailwind"
+                                                        xmlns="http://www.w3.org/2000/svg" width="1000" height="1000"
+                                                        viewBox="0 0 1000 1000" fill="none">
+                                                        <path
+                                                            d="M489.5 226.499C328 231.632 280 346.999 269 409.499C283.333 386.332 328.5 335.5 395 335.5C472.5 335.5 531.5 422 567.5 449C611.237 481.803 699.123 525.115 814.5 490C906.5 462 949.167 364.332 958.5 317.999C914 378.499 846.5 414.838 763 371.999C705.5 342.499 662.5 221 489.5 226.499Z"
+                                                            fill="#07B6D5" />
+                                                        <path
+                                                            d="M261 500.999C99.5 506.132 51.5 621.499 40.5 683.999C54.8333 660.832 100 610 166.5 610C244 610 303 696.5 339 723.5C382.737 756.303 470.623 799.615 586 764.5C678 736.5 720.667 638.832 730 592.499C685.5 652.999 618 689.338 534.5 646.499C477 616.999 434 495.5 261 500.999Z"
+                                                            fill="#07B6D5" />
+                                                    </svg>
+                                                    <div id="tooltip-portfolio-tailwind" role="tooltip"
+                                                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
+                                                        Tailwind
+                                                        <div class="tooltip-arrow" data-popper-arrow></div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Button to the project -->
+                                    <!-- Description -->
+                                    <div
+                                        class="hidden h-full w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:bg-cyan-200/[.20] transition duration-300 rounded-t-xl">
+                                        <div class="flex flex-col gap-5 xl:gap-10 place-items-start">
+                                            <!-- Titles & Description container -->
+                                            <div>
+                                                <!-- Subtitle -->
+                                                <h2
+                                                    class="text-sm title-font text-cyan-300 text-shadow font-bold tracking-widest">
+                                                    LATEST
+                                                </h2>
+                                                <!-- Title -->
+                                                <h1
+                                                    class="text-blue-400 text-shadow text-3xl title-font font-medium mb-4">
+                                                    This
+                                                    Portfolio</h1>
+                                                <!-- Description -->
+                                                <p class="text-blue-100 leading-relaxed">Simple page to present myself &
+                                                    show my
+                                                    work.
+                                                </p>
+                                            </div>
+                                            <!-- Technologies -->
+                                            <div class="flex items-center">
+                                                <!-- Tailwind Icon -->
+                                                <div>
+                                                    <svg class="w-12 h-12 rounded-full"
+                                                        data-tooltip-target="tooltip-portfolio-tailwind"
+                                                        xmlns="http://www.w3.org/2000/svg" width="1000" height="1000"
+                                                        viewBox="0 0 1000 1000" fill="none">
+                                                        <path
+                                                            d="M489.5 226.499C328 231.632 280 346.999 269 409.499C283.333 386.332 328.5 335.5 395 335.5C472.5 335.5 531.5 422 567.5 449C611.237 481.803 699.123 525.115 814.5 490C906.5 462 949.167 364.332 958.5 317.999C914 378.499 846.5 414.838 763 371.999C705.5 342.499 662.5 221 489.5 226.499Z"
+                                                            fill="#07B6D5" />
+                                                        <path
+                                                            d="M261 500.999C99.5 506.132 51.5 621.499 40.5 683.999C54.8333 660.832 100 610 166.5 610C244 610 303 696.5 339 723.5C382.737 756.303 470.623 799.615 586 764.5C678 736.5 720.667 638.832 730 592.499C685.5 652.999 618 689.338 534.5 646.499C477 616.999 434 495.5 261 500.999Z"
+                                                            fill="#07B6D5" />
+                                                    </svg>
+                                                    <div id="tooltip-portfolio-tailwind" role="tooltip"
+                                                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
+                                                        Tailwind
+                                                        <div class="tooltip-arrow" data-popper-arrow></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -1297,29 +1336,28 @@
                                         <div class="flex space-x-4">
                                             <!-- Python Icon -->
                                             <div>
-                                                <svg id="pythonSvg"
-                                                    class="w-12 h-12 rounded-full p-2 group-hover:bg-blue-50"
+                                                <svg class="w-12 h-12 rounded-full group-hover:bg-blue-50 p-2"
                                                     data-tooltip-target="tooltip-project-python"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     preserveAspectRatio="xMinYMin meet" viewBox="0 0 256 255">
                                                     <defs>
-                                                        <linearGradient id="a" x1="12.959%" x2="79.639%" y1="12.039%"
-                                                            y2="78.201%">
-                                                            <stop offset="0%" stop-color="#387EB8"></stop>
-                                                            <stop offset="100%" stop-color="#366994"></stop>
+                                                        <linearGradient x1="12.959%" y1="12.039%" x2="79.639%"
+                                                            y2="78.201%" id="grad1">
+                                                            <stop stop-color="#387EB8" offset="0%" />
+                                                            <stop stop-color="#366994" offset="100%" />
                                                         </linearGradient>
-                                                        <linearGradient id="b" x1="19.128%" x2="90.742%" y1="20.579%"
-                                                            y2="88.429%">
-                                                            <stop offset="0%" stop-color="#FFE052"></stop>
-                                                            <stop offset="100%" stop-color="#FFC331"></stop>
+                                                        <linearGradient x1="19.128%" y1="20.579%" x2="90.742%"
+                                                            y2="88.429%" id="grad2">
+                                                            <stop stop-color="#FFE052" offset="0%" />
+                                                            <stop stop-color="#FFC331" offset="100%" />
                                                         </linearGradient>
                                                     </defs>
-                                                    <path fill="url(#a)"
-                                                        d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zM92.802 19.66a11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13 11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.13z">
-                                                    </path>
-                                                    <path fill="url(#b)"
-                                                        d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897zm34.114-19.586a11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.131 11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13z">
-                                                    </path>
+                                                    <path
+                                                        d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zM92.802 19.66a11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13 11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.13z"
+                                                        fill="url(#grad1)" />
+                                                    <path
+                                                        d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897zm34.114-19.586a11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.131 11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13z"
+                                                        fill="url(#grad2)" />
                                                 </svg>
                                                 <div id="tooltip-project-python" role="tooltip"
                                                     class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
