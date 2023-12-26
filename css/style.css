@@ -1,3 +1,13 @@
+#About {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.16' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#aboutMe {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 1066 800" opacity="0.15"><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="oooscillate-grad"><stop stop-color="hsl(205, 69%, 60%)" stop-opacity="1" offset="0%"></stop><stop stop-color="hsl(205, 69%, 80%)" stop-opacity="1" offset="100%"></stop></linearGradient></defs><g stroke-width="2" stroke="url(%23oooscillate-grad)" fill="none" stroke-linecap="round"><path d="M 0 468 Q 266.5 -95 533 400 Q 799.5 895 1066 468" opacity="0.70"></path><path d="M 0 442 Q 266.5 -95 533 400 Q 799.5 895 1066 442" opacity="0.23"></path><path d="M 0 416 Q 266.5 -95 533 400 Q 799.5 895 1066 416" opacity="0.75"></path><path d="M 0 390 Q 266.5 -95 533 400 Q 799.5 895 1066 390" opacity="0.83"></path><path d="M 0 364 Q 266.5 -95 533 400 Q 799.5 895 1066 364" opacity="0.84"></path><path d="M 0 338 Q 266.5 -95 533 400 Q 799.5 895 1066 338" opacity="0.34"></path><path d="M 0 312 Q 266.5 -95 533 400 Q 799.5 895 1066 312" opacity="0.83"></path><path d="M 0 286 Q 266.5 -95 533 400 Q 799.5 895 1066 286" opacity="0.67"></path><path d="M 0 260 Q 266.5 -95 533 400 Q 799.5 895 1066 260" opacity="0.62"></path><path d="M 0 234 Q 266.5 -95 533 400 Q 799.5 895 1066 234" opacity="0.17"></path><path d="M 0 208 Q 266.5 -95 533 400 Q 799.5 895 1066 208" opacity="0.43"></path><path d="M 0 182 Q 266.5 -95 533 400 Q 799.5 895 1066 182" opacity="0.22"></path><path d="M 0 156 Q 266.5 -95 533 400 Q 799.5 895 1066 156" opacity="0.38"></path><path d="M 0 130 Q 266.5 -95 533 400 Q 799.5 895 1066 130" opacity="0.98"></path><path d="M 0 104 Q 266.5 -95 533 400 Q 799.5 895 1066 104" opacity="0.97"></path><path d="M 0 78 Q 266.5 -95 533 400 Q 799.5 895 1066 78" opacity="0.27"></path><path d="M 0 52 Q 266.5 -95 533 400 Q 799.5 895 1066 52" opacity="0.62"></path></g></svg>');
+    background-size: cover;
+}
+
 #Skills {
     background-color: #ffffff;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23c6c8cc' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
