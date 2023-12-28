@@ -142,7 +142,7 @@
                 <div class="lg:flex mx-auto">
                     <!-- Analytics Card -->
                     <div id="analyticsCard"
-                        class="lg:flex-grow group relative max-w-md cursor-pointer rounded-lg overflow-hidden px-10 pt-10 pb-6 lg:px-2 xl:px-10 mx-auto my-5 shadow-lg shadow-gray-400/75 ring-1 ring-gray-900/5 transition-all duration-300 hover:bg-sky-600 hover:-translate-y-1 hover:shadow-2xl lg:max-w-xs xl:max-w-sm 2xl:max-w-md">
+                        class="lg:flex-grow group relative max-w-md cursor-pointer rounded-lg overflow-hidden px-10 pt-10 pb-6 lg:px-2 xl:px-10 mx-auto my-5 shadow-lg shadow-gray-400/75 ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl lg:max-w-xs xl:max-w-sm 2xl:max-w-md">
                         <!-- Blue circle growing blue on hover -->
                         <span
                             class="absolute top-10 z-0 h-20 w-20 rounded-full bg-sky-700 transition-all duration-300 scale-[10] group-hover:scale-0"></span>
@@ -246,17 +246,17 @@
 
                     <!-- Backend Card -->
                     <div id="backendCard"
-                        class="lg:flex-grow group relative max-w-md cursor-pointer rounded-lg overflow-hidden bg-white px-10 pt-10 pb-6 lg:px-2 xl:px-10 mx-auto my-5 shadow-lg shadow-gray-400/75 ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl lg:max-w-xs xl:max-w-sm 2xl:max-w-md">
+                        class="lg:flex-grow group relative max-w-md cursor-pointer rounded-lg overflow-hidden px-10 pt-10 pb-6 lg:px-2 xl:px-10 mx-auto my-5 shadow-lg shadow-gray-400/75 ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl lg:max-w-xs xl:max-w-sm 2xl:max-w-md">
                         <!-- Growing blue on hover -->
                         <span
-                            class="absolute top-10 z-0 h-20 w-20 rounded-full bg-sky-700 transition-all duration-300 group-hover:scale-[10]"></span>
+                            class="absolute top-10 z-0 h-20 w-20 rounded-full bg-sky-700 transition-all duration-300 scale-[10] group-hover:scale-0"></span>
                         <!-- Card content -->
                         <div class="relative z-10 mx-auto max-w-md">
                             <!-- Card Icon & Title -->
                             <div class="flex items-center">
                                 <!-- Card Icon -->
                                 <span
-                                    class="grid h-20 w-20 place-items-center rounded-full bg-sky-700 transition-all duration-300 group-hover:bg-sky-600">
+                                    class="grid h-20 w-20 place-items-center rounded-full bg-sky-600 transition-all duration-300 group-hover:bg-sky-700">
                                     <svg class="h-12 w-12 fill-white transition-all" viewBox="0 0 32 32" version="1.1"
                                         xmlns="http://www.w3.org/2000/svg" role="icon">
                                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -270,24 +270,22 @@
                                     </svg>
                                 </span>
                                 <!-- Card Title -->
-                                <h3
-                                    class="text-2xl font-bold text-sky-900 ms-5 transition-all duration-300 group-hover:text-white">
+                                <h3 class="text-2xl font-bold text-white ms-5 transition-all duration-300">
                                     Back-end Dev
                                 </h3>
                             </div>
                             <!-- Description -->
                             <div
-                                class="h-14 space-y-6 text-base leading-7 text-sky-900 transition-all duration-300 group-hover:text-cyan-50 pt-5">
+                                class="h-14 space-y-6 text-base leading-7 text-cyan-50 transition-all duration-300 pt-5">
                                 <p>Databases, API, Sync & Async solutions.</p>
                             </div>
                             <!-- HR & Tech icons -->
                             <div>
-                                <hr class="h-px my-8 bg-gray-300 border-0 group-hover:bg-white">
+                                <hr class="h-px my-8 bg-white border-0">
                                 <!-- Tech Icons -->
                                 <div id="backendIcons" class="flex gap-3">
                                     <div id="nodejsIcon">
-                                        <svg id="nodejsSvg"
-                                            class="w-12 h-12 fill-sky-700 group-hover:fill-sky-50 outline-none p-1.5"
+                                        <svg id="nodejsSvg" class="w-12 h-12 fill-sky-50 outline-none p-1.5"
                                             data-tooltip-target="tooltip-nodejs" viewBox="0 0 256 282"
                                             xmlns="http://www.w3.org/2000/svg" role="icon"
                                             preserveAspectRatio="xMinYMin meet">
@@ -306,8 +304,7 @@
                                     </div>
 
                                     <div id="mongodbIcon">
-                                        <svg id="mongodbSvg"
-                                            class="w-12 h-12 fill-sky-700 group-hover:fill-sky-50 outline-none p-1.5"
+                                        <svg id="mongodbSvg" class="w-12 h-12 fill-sky-50 outline-none p-1.5"
                                             data-tooltip-target="tooltip-mongo" viewBox="0 0 24 24"
                                             xmlns="http://www.w3.org/2000/svg" role="icon">
                                             <title>MongoDB</title>
@@ -322,8 +319,7 @@
                                     </div>
 
                                     <div id="dockerIcon">
-                                        <svg id="dockerSvg"
-                                            class="w-12 h-12 fill-sky-700 group-hover:fill-sky-50 outline-none p-1.5"
+                                        <svg id="dockerSvg" class="w-12 h-12 fill-sky-50 outline-none p-1.5"
                                             data-tooltip-target="tooltip-docker" viewBox="0 0 16 16"
                                             xmlns="http://www.w3.org/2000/svg" role="icon">
                                             <path
@@ -337,8 +333,7 @@
                                     </div>
 
                                     <div id="postgresqlIcon">
-                                        <svg id="postgresqlSvg"
-                                            class="w-12 h-12 fill-sky-700 group-hover:fill-sky-50 outline-none p-1.5"
+                                        <svg id="postgresqlSvg" class="w-12 h-12 fill-sky-50 outline-none p-1.5"
                                             data-tooltip-target="tooltip-postgre" viewBox="0 0 24 24"
                                             xmlns="http://www.w3.org/2000/svg" role="icon">
                                             <title>PostgreSQL</title>
