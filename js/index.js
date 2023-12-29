@@ -1,6 +1,6 @@
 // Get contact form items
-const buttonActive = document.getElementById("buttonActive")
-const buttonLabel = document.getElementById("buttonLabel")
+const buttonActive = document.getElementById("buttonActive");
+const buttonLabel = document.getElementById("buttonLabel");
 
 // Function to change the label on form submit
 function changeLabel() {
